@@ -1,20 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Schema;
+﻿using Data;
+using Data.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using MQTTnet;
 using MQTTnet.Client;
-using MQTTnet.Server;
-using System.Threading;
-using System.Net.Sockets;
-using Data.Entities;
-using Data;
+using System.Globalization;
+using System.Text;
 
 namespace Receiver.Services
 {

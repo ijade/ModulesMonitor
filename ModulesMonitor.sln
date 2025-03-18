@@ -14,6 +14,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Receiver", "Receiver\Receiv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SensorEmulator", "SensorEmulator\SensorEmulator.csproj", "{E9F1B2ED-01A0-414E-9BB8-066FE6E47442}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPA", "SPA\SPA.csproj", "{B018E061-C979-4B83-B70E-E2A7A66F3B50}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,6 +38,10 @@ Global
 		{E9F1B2ED-01A0-414E-9BB8-066FE6E47442}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E9F1B2ED-01A0-414E-9BB8-066FE6E47442}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E9F1B2ED-01A0-414E-9BB8-066FE6E47442}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B018E061-C979-4B83-B70E-E2A7A66F3B50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B018E061-C979-4B83-B70E-E2A7A66F3B50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B018E061-C979-4B83-B70E-E2A7A66F3B50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B018E061-C979-4B83-B70E-E2A7A66F3B50}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

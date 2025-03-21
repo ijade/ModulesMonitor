@@ -2,15 +2,21 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Duende.IdentityServer.EntityFramework.Options;
-using SPA.Models;
+using Data.Entities;
 
-namespace SPA.Data;
+namespace Data;
 
 public class ApplicationDbContext : ApiAuthorizationDbContext<ApplicationUser>
 {
     public ApplicationDbContext(DbContextOptions options, IOptions<OperationalStoreOptions> operationalStoreOptions)
         : base(options, operationalStoreOptions)
     {
-        
+
     }
+
+    public DbSet<Module> Modules { get; set; }
+
+    public DbSet<Sensor> Sensors { get; set; }
+
+    public DbSet<SensorValue> SensorValues { get; set; }
 }

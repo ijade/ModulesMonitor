@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Identity;
 
-namespace SPA.Models;
+namespace Data.Entities;
 
 public class ApplicationUser : IdentityUser
 {
-    
+
 }

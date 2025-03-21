@@ -1,7 +1,9 @@
 ﻿using Data;
 using Data.Entities;
+using Duende.IdentityServer.EntityFramework.Options;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using MQTTnet;
 using MQTTnet.Client;
@@ -17,7 +19,8 @@ namespace Receiver.Services
         private List<Module> cachedModules;
         private CancellationToken cancellationToken;
 
-        private Context _context;
+        private ApplicationDbContext _context;
+        private readonly ServiceProvider _serviceProvider;
         private readonly IConfigurationRoot _config;
         private readonly ILogger<MqttReceiverService> _logger;
         private readonly int reCachePulse;
@@ -27,8 +30,9 @@ namespace Receiver.Services
         private const string dateTimeFormat = "yyyy-MM-dd HH:mm:ss.fffzzz";
         private readonly CultureInfo LOCALE = new CultureInfo("en-US");
 
-        public MqttReceiverService(ILoggerFactory loggerFactory, IConfigurationRoot config)
+        public MqttReceiverService(ILoggerFactory loggerFactory, IConfigurationRoot config, ServiceProvider serviceProvider)
         {
+            _serviceProvider = serviceProvider;
             _config = config;
             _logger = loggerFactory.CreateLogger<MqttReceiverService>();
 
@@ -140,12 +144,7 @@ namespace Receiver.Services
             {
                 using
                 (
-                    _context = new Context
-                    (
-                        new DbContextOptionsBuilder<Context>()
-                            .UseNpgsql(_config.GetConnectionString("DefaultConnection"))
-                            .Options
-                    )
+                    _context = _serviceProvider.GetService<ApplicationDbContext>()
                 )
                 {
                     try

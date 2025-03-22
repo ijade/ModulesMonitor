@@ -1,9 +1,7 @@
 ﻿using Data;
 using Data.Entities;
-using Duende.IdentityServer.EntityFramework.Options;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using MQTTnet;
 using MQTTnet.Client;
@@ -20,21 +18,22 @@ namespace Receiver.Services
         private CancellationToken cancellationToken;
 
         private ApplicationDbContext _context;
-        private readonly ServiceProvider _serviceProvider;
         private readonly IConfigurationRoot _config;
         private readonly ILogger<MqttReceiverService> _logger;
+        private readonly IDbContextFactory<ApplicationDbContext> _dbContextFactory;
+
         private readonly int reCachePulse;
         private readonly int reconnectDelay;
         private Task loopTask;
 
         private const string dateTimeFormat = "yyyy-MM-dd HH:mm:ss.fffzzz";
-        private readonly CultureInfo LOCALE = new CultureInfo("en-US");
+        private readonly CultureInfo LOCALE = new("en-US");
 
-        public MqttReceiverService(ILoggerFactory loggerFactory, IConfigurationRoot config, ServiceProvider serviceProvider)
+        public MqttReceiverService(ILoggerFactory loggerFactory, IConfigurationRoot config, IDbContextFactory<ApplicationDbContext> dbContextFactory)
         {
-            _serviceProvider = serviceProvider;
             _config = config;
             _logger = loggerFactory.CreateLogger<MqttReceiverService>();
+            _dbContextFactory = dbContextFactory;
 
             var host = config["MqttClient:Host"];
             var port = Convert.ToInt32(config["MqttClient:Port"]);
@@ -142,10 +141,7 @@ namespace Receiver.Services
         {
             while (!cancellationToken.IsCancellationRequested)
             {
-                using
-                (
-                    _context = _serviceProvider.GetService<ApplicationDbContext>()
-                )
+                using (_context = await _dbContextFactory.CreateDbContextAsync(cancellationToken))
                 {
                     try
                     {
@@ -153,7 +149,7 @@ namespace Receiver.Services
                         {
                             await Reconnect();
                         }
-                        _logger.LogInformation("Loading boreholes");
+                        _logger.LogInformation("Loading modules...");
 
                         cachedModules = await _context.Modules
                             .Include(x => x.Sensors)
@@ -173,8 +169,9 @@ namespace Receiver.Services
             }
         }
 
-        private async Task ProcessValue(string topic, string message)
+        private async Task ProcessValue(string topicSrc, string message)
         {
+            string topic = topicSrc.ToLower();
             try
             {
                 var module = cachedModules ?.FirstOrDefault(x => x.MqttTopic == topic);

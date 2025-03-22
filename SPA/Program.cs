@@ -2,6 +2,7 @@ using Data;
 using Data.Entities;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.EntityFrameworkCore;
+using SPA.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,6 +20,8 @@ builder.Services.AddIdentityServer()
 
 builder.Services.AddAuthentication()
     .AddIdentityServerJwt();
+
+builder.Services.AddTransient<UserChartService>();
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();

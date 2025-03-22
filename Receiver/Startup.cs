@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using Data;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Receiver.Services;
@@ -30,6 +32,11 @@ namespace Receiver
                 configure.AddFilter("Microsoft.EntityFrameworkCore.Database.Command", LogLevel.Warning);
                 configure.AddFile(Configuration["Logging:FilePath"]);
             });
+
+            //services.AddDbContext<ApplicationDbContext>(options =>
+            //    options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContextFactory<ApplicationDbContext>(options =>
+                options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddSingleton<IConfigurationRoot>(Configuration);
             services.AddSingleton<MqttReceiverService>();

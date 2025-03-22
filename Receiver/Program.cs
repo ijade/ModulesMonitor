@@ -13,6 +13,8 @@ namespace Receiver
 
             IServiceCollection services = new ServiceCollection();
 
+
+
             Startup startup = new Startup();
             startup.ConfigureServices(services);
             IServiceProvider serviceProvider = services.BuildServiceProvider();

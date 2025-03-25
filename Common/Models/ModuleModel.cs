@@ -1,19 +1,16 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace Data.Entities
+﻿namespace Common.Models
 {
-    public class Module : BaseEntity
+    public class ModuleModel
     {
-        [Required]
+        public int Id { get; set; }
         public string Name { get; set; } = string.Empty;
 
         public string? Description { get; set; }
 
-        [Required]
         public string MqttTopic { get; set; } = string.Empty;
 
         public DateTime CreatedAt { get; set; }
 
-        public ICollection<Sensor> Sensors { get; set; } = new List<Sensor>();
+        public ICollection<SensorModel> Sensors { get; set; } = new List<SensorModel>();
     }
 }

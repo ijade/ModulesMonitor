@@ -1,0 +1,12 @@
+@startuml
+class UserChartModel {
+    + Id : int <<get>> <<set>>
+    + Name : string <<get>> <<set>>
+    + Description : string? <<get>> <<set>>
+    + MqttTopic : string <<get>> <<set>>
+}
+class "IEnumerable`1"<T> {
+}
+UserChartModel --> "CreatedAt" DateTime
+UserChartModel o-> "Sensors<SensorWithValuesModel>" "IEnumerable`1"
+@enduml

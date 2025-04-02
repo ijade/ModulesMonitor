@@ -9,7 +9,7 @@ using SPA.Services;
 
 namespace SPA.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     //[EnableCors]
     //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = RoleConstants.All)]

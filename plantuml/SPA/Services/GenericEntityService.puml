@@ -1,0 +1,12 @@
+@startuml
+abstract class "GenericEntityService`2"<TEntity,TModel> {
+    + UserClaims : ClaimsPrincipal <<get>> <<set>>
+    + GenericEntityService(ApplicationDbContext:ApplicationDbContext, mapper:IMapper)
+    <<virtual>> + <<async>> GetAll() : Task<ICollection<TModel>>
+    <<virtual>> + <<async>> GetById(id:long) : Task<TModel>
+    <<virtual>> + <<async>> GetPage(parameters:PagingParameters) : Task<PagedList<TModel>>
+    {abstract} + Add(model:TModel) : Task<ResultModel>
+    {abstract} + Update(model:TModel) : Task<ResultModel>
+    <<virtual>> + <<async>> Delete(id:long) : Task<ResultModel>
+}
+@enduml

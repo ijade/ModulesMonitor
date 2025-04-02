@@ -1,0 +1,9 @@
+@startuml
+class Sensor {
+    + PositionIndex : int <<get>> <<set>>
+    + DecimalPlaces : int <<get>> <<set>>
+    + MeasuringUnitName : string <<get>> <<set>>
+    + Module : Module <<get>> <<set>>
+}
+BaseEntity <|-- Sensor
+@enduml

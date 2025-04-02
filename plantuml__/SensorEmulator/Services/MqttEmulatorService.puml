@@ -1,0 +1,10 @@
+@startuml
+class MqttEmulatorService {
+    + MqttEmulatorService(loggerFactory:ILoggerFactory, config:IConfigurationRoot, distributionProviderService:DistributionProviderService)
+    + <<async>> Start() : Task
+    + <<async>> Disconnect() : Task
+    + <<async>> CreateTopics() : Task
+    + <<async>> SendMessagesValue() : Task
+}
+MqttEmulatorService --> "Options" MqttClientOptions
+@enduml

@@ -1,0 +1,6 @@
+@startuml
+class EmulatedModule {
+    + FakeSensors : List<EmulatedSensor> <<get>> <<set>>
+    + TopicValuesName : string <<get>> <<set>>
+}
+@enduml

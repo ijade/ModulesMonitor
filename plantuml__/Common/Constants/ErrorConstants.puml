@@ -1,0 +1,8 @@
+@startuml
+class ErrorConstants <<static>> {
+    + <<const>> USER_ALREADY_EXISTS : string = "USER_ALREADY_EXISTS"
+    + <<const>> INVALID_FILETYPE : string = "INVALID_FILETYPE"
+    + <<const>> CASCADE_DELETE : string = "CASCADE_DELETE"
+    + <<const>> DATABASE : string = "DATABASE"
+}
+@enduml

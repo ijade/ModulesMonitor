@@ -1,0 +1,58 @@
+<div [className]="{ loading: isLoading }"></div>
+
+<div class="buttons">
+  <button mat-stroked-button color="primary" (click)="add()">
+    Добавить модуль
+  </button>
+</div>
+
+<mat-table #table (matSortChange)="sorting($event)" [dataSource]="dataSource" matSort>
+  <ng-container matColumnDef="name">
+    <mat-header-cell mat-sort-header *matHeaderCellDef>Название</mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{ element.name }} </mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="description">
+    <mat-header-cell mat-sort-header *matHeaderCellDef>Описание</mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{ element.description }} </mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="createdAt">
+    <mat-header-cell mat-sort-header *matHeaderCellDef>Дата создания</mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{ DateToString(element.createdAt) }} </mat-cell>
+  </ng-container>
+
+  <!-- <ng-container matColumnDef="mineralField.name">
+    <mat-header-cell mat-sort-header *matHeaderCellDef>Наименование месторождения</mat-header-cell>
+    <mat-cell *matCellDef="let element">{{ element.mineralField.name }}</mat-cell>
+  </ng-container> -->
+
+  <ng-container matColumnDef="buttons">
+    <mat-header-cell *matHeaderCellDef class="order-by-header">
+      <app-search-bar (searchEvent)="search($event)"></app-search-bar>
+    </mat-header-cell>
+    <mat-cell *matCellDef="let element">
+      <div class="cell-buttons">
+        <button mat-icon-button matTooltip="Нажмите для редактирования" (click)="edit(element)">
+          <mat-icon>edit</mat-icon>
+        </button>
+        <button mat-icon-button matTooltip="Нажмите для удаления" (click)="delete(element.id)">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </div>
+    </mat-cell>
+  </ng-container>
+
+  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+</mat-table>
+
+<mat-paginator
+  [disabled]="false"
+  [length]="this.pagedList.totalCount"
+  [pageSize]="this.pagedList.pageSize"
+  [pageIndex]="this.pagedList.currentPage"
+  [pageSizeOptions]="pageSizes"
+  [showFirstLastButtons]="true"
+  (page)="paging($event)">
+</mat-paginator>

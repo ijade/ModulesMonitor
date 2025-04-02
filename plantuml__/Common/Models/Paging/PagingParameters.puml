@@ -1,0 +1,14 @@
+@startuml
+class PagingParameters {
+    + PageIndex : int <<get>> <<set>>
+    + OrderBy : string <<get>> <<set>>
+    + Term : string <<get>> <<set>>
+    + SearchableFields : string <<get>> <<set>>
+}
+enum PageSize {
+    Ten= 10,
+    Twenty= 20,
+    Fifty= 50,
+}
+PagingParameters --> "PageSize" PageSize
+@enduml

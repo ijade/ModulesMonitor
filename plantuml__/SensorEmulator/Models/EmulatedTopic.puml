@@ -1,0 +1,6 @@
+@startuml
+class EmulatedTopic {
+    + Name : string <<get>> <<set>>
+    + Value : string <<get>> <<set>>
+}
+@enduml

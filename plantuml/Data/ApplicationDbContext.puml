@@ -1,0 +1,9 @@
+@startuml
+class ApplicationDbContext {
+    + ApplicationDbContext(options:DbContextOptions, operationalStoreOptions:IOptions<OperationalStoreOptions>)
+    + Modules : DbSet<Module> <<get>> <<set>>
+    + Sensors : DbSet<Sensor> <<get>> <<set>>
+    + SensorValues : DbSet<SensorValue> <<get>> <<set>>
+}
+"ApiAuthorizationDbContext`1" "<ApplicationUser>" <|-- ApplicationDbContext
+@enduml

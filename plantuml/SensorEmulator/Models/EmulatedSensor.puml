@@ -1,0 +1,6 @@
+@startuml
+class EmulatedSensor {
+    + EmulatedSensorSettings : EmulatedSensorSettings <<get>> <<set>>
+    + FakeTopics : List<EmulatedTopic> <<get>> <<set>>
+}
+@enduml

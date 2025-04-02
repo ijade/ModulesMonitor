@@ -1,0 +1,7 @@
+@startuml
+class EmulatedSensorSettings {
+    + Min : double <<get>> <<set>>
+    + Max : double <<get>> <<set>>
+    + StdDev : double <<get>> <<set>>
+}
+@enduml

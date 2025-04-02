@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 
@@ -13,6 +13,25 @@ import { ApiAuthorizationModule } from 'src/api-authorization/api-authorization.
 import { AuthorizeGuard } from 'src/api-authorization/authorize.guard';
 import { AuthorizeInterceptor } from 'src/api-authorization/authorize.interceptor';
 import { BaseChartDirective, NgChartsModule } from 'ng2-charts';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SpreadsheetsComponent } from './spreadsheets/spreadsheets.component';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { MatTable, MatTableModule } from '@angular/material/table';
+import { ModulesComponent } from './spreadsheets/modules/modules.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatIconModule } from '@angular/material/icon';
+import { ModuleModalAddEditComponent } from './spreadsheets/modules/module-modal-add-edit/module-modal-add-edit.component';
+import { MatSelectModule } from '@angular/material/select';
+import { SearchBarComponent } from './search/search-bar/search-bar.component';
+import { MatSortModule } from '@angular/material/sort';
+import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
+import { NotificationService } from './services/NotificationService';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { SensorValueBindingComponent } from './spreadsheets/modules/module-modal-add-edit/sensor-value-binding/sensor-value-binding.component';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 @NgModule({
   declarations: [
@@ -20,22 +39,47 @@ import { BaseChartDirective, NgChartsModule } from 'ng2-charts';
     NavMenuComponent,
     HomeComponent,
     CounterComponent,
-    FetchDataComponent
+    FetchDataComponent,
+    SpreadsheetsComponent,
+    ModuleModalAddEditComponent,
+    ModulesComponent,
+    SearchBarComponent,
+    SensorValueBindingComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
     FormsModule,
     ApiAuthorizationModule,
+    MatProgressSpinnerModule,
+    MatDialogModule, FormsModule, MatButtonModule, MatFormFieldModule, MatInputModule, ReactiveFormsModule,
+    MatTableModule,
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    NgChartsModule,
+    MatIconModule,
+    MatSelectModule,
+    MatTableModule,
+    MatSortModule,
+    MatPaginatorModule,
+    MatSnackBarModule,
+    DragDropModule, 
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent, canActivate: [AuthorizeGuard] },
+      { path: 'spreadsheet-modules', component: ModulesComponent },
+
     ]),
-    NgChartsModule
+    NgChartsModule,
+    BrowserAnimationsModule
   ],
   providers: [
-    { provide: HTTP_INTERCEPTORS, useClass: AuthorizeInterceptor, multi: true }
+    { provide: HTTP_INTERCEPTORS, useClass: AuthorizeInterceptor, multi: true },
+    NotificationService
   ],
   bootstrap: [AppComponent]
 })

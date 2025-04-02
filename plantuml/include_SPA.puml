@@ -1,0 +1,10 @@
+@startuml
+!include .\\SPA\Controllers\ModuleController.puml
+!include .\\SPA\Controllers\OidcConfigurationController.puml
+!include .\\SPA\Controllers\UserChartController.puml
+!include .\\SPA\Pages\Error.cshtml.puml
+!include .\\SPA\Services\GenericEntityService.puml
+!include .\\SPA\Services\ModuleService.puml
+!include .\\SPA\Services\UserChartService.puml
+!include .\\SPA\ClientApp\node_modules\node-gyp\lib\Find-VisualStudio.puml
+@enduml

@@ -1,0 +1,8 @@
+@startuml
+class MqttReceiverService {
+    + Options : MqttClientOptions <<get>>
+    + MqttReceiverService(loggerFactory:ILoggerFactory, config:IConfigurationRoot, dbContextFactory:IDbContextFactory<ApplicationDbContext>)
+    + <<async>> Disconnect() : Task
+    + <<async>> Start(ct:CancellationToken) : Task
+}
+@enduml

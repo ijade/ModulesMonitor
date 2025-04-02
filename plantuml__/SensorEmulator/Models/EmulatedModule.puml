@@ -1,0 +1,8 @@
+@startuml
+class EmulatedModule {
+    + TopicValuesName : string <<get>> <<set>>
+}
+class "List`1"<T> {
+}
+EmulatedModule --> "FakeSensors<EmulatedSensor>" "List`1"
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+class Startup {
+    + Startup()
+    + ConfigureServices(services:IServiceCollection) : void
+}
+Startup --> "Configuration" IConfigurationRoot
+@enduml

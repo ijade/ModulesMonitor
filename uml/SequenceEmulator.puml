@@ -1,0 +1,12 @@
+@startuml
+participant "Эмулятор" as Pub
+participant "Брокер" as Broker
+participant "Хранилище" as Storage
+
+Pub -> Broker: PUBLISH (QoS=2, PacketID=123)
+Broker -> Storage: Сохранить (Status=HELD)
+Broker --> Pub: PUBREC (123)
+Pub -> Broker: PUBREL (123)
+Broker -> Storage: Обновить (Status=RELEASED)
+Broker --> Pub: PUBCOMP (123)
+@enduml

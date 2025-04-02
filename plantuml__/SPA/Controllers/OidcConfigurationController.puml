@@ -1,0 +1,8 @@
+@startuml
+class OidcConfigurationController {
+    + OidcConfigurationController(clientRequestParametersProvider:IClientRequestParametersProvider, logger:ILogger<OidcConfigurationController>)
+    + GetClientRequestParameters(clientId:string) : IActionResult
+}
+Controller <|-- OidcConfigurationController
+OidcConfigurationController --> "ClientRequestParametersProvider" IClientRequestParametersProvider
+@enduml

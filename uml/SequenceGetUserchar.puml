@@ -1,0 +1,13 @@
+@startuml
+actor "Пользователь" as User
+participant "Frontend" as UI
+participant "Backend REST API" as API
+participant "База данных" as DB
+
+User -> UI: Запрос истории (Sensor.Id =1, Start=2025-01-01, End=2025-01-02)
+UI -> API: GET /api/userchart/1?start=...&end=...
+API -> DB: SELECT * FROM SensorValues \n WHERE SensorId=1 AND ReadingDateTime BETWEEN '2025-01-01' AND '2025-01-02'
+DB --> API: Данные (JSON)
+API --> UI: 200 OK (JSON)
+UI --> User: Отображение графика
+@enduml

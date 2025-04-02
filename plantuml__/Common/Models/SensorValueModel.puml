@@ -1,0 +1,8 @@
+@startuml
+class SensorValueModel {
+    + Id : int <<get>> <<set>>
+    + Value : string <<get>> <<set>>
+    + SensorId : int <<get>> <<set>>
+}
+SensorValueModel --> "ReadingDateTime" DateTime
+@enduml

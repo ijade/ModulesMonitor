@@ -1,0 +1,16 @@
+@startuml
+!include .\\Data\ApplicationDbContext.puml
+!include .\\SensorEmulator\Program.puml
+!include .\\SensorEmulator\Startup.puml
+!include .\\Data\Entities\ApplicationUser.puml
+!include .\\Data\Entities\BaseEntity.puml
+!include .\\Data\Entities\Module.puml
+!include .\\Data\Entities\Sensor.puml
+!include .\\Data\Entities\SensorValue.puml
+!include .\\SensorEmulator\Models\EmulatedModule.puml
+!include .\\SensorEmulator\Models\EmulatedSensor.puml
+!include .\\SensorEmulator\Models\EmulatedSensorSettings.puml
+!include .\\SensorEmulator\Models\EmulatedTopic.puml
+!include .\\SensorEmulator\Services\DistributionProviderService.puml
+!include .\\SensorEmulator\Services\MqttEmulatorService.puml
+@enduml

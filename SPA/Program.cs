@@ -21,22 +21,27 @@ builder.Services.AddIdentityServer()
 builder.Services.AddAuthentication()
     .AddIdentityServerJwt();
 
-builder.Services.AddTransient<UserChartService>();
-
-builder.Services.AddControllersWithViews();
-builder.Services.AddRazorPages();
-
 builder.Services.AddAutoMapper(options =>
 {
     options.CreateMap<Module, ModuleModel>()
         .ReverseMap();
 
+    options.CreateMap<Sensor, SensorModel>()
+        .ReverseMap();
     options.CreateMap<Sensor, SensorWithValuesModel>()
         .ReverseMap();
 
     options.CreateMap<SensorValue, SensorValueModel>()
         .ReverseMap();
 });
+
+builder.Services.AddTransient<UserChartService>();
+builder.Services.AddTransient<ModuleService>();
+
+builder.Services.AddControllersWithViews();
+builder.Services.AddRazorPages();
+
+
 
 var app = builder.Build();
 

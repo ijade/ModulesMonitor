@@ -1,0 +1,17 @@
+@startuml
+title Получение и сохранение данных (QoS 2)
+participant "Брокер" as Broker
+participant "Ресивер" as Subscriber
+participant "База данных" as DB
+
+autonumber
+
+Broker -> Subscriber: PUBLISH (QoS=2, PacketID=456)
+Subscriber -> Subscriber: Буферизация сообщения
+Subscriber --> Broker: PUBREC (456)
+Broker -> Subscriber: PUBREL (456)
+Subscriber -> DB: INSERT INTO SensorValues...
+DB --> Subscriber: OK
+Subscriber --> Broker: PUBCOMP (456)
+Broker -> Broker: Удаление PacketID=456
+@enduml

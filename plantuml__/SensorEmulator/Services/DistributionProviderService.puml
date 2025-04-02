@@ -1,0 +1,6 @@
+@startuml
+class DistributionProviderService {
+    + DistributionProviderService()
+    + GetNormalDistributedValue(settings:EmulatedSensorSettings, index:int) : double
+}
+@enduml

@@ -1,0 +1,6 @@
+@startuml
+class UserChartService {
+    + UserChartService(context:ApplicationDbContext)
+    + <<async>> GetUserCharts() : Task<ICollection<UserChartModel>>
+}
+@enduml

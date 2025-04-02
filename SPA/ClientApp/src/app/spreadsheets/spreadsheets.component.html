@@ -1,0 +1,16 @@
+<nav class="mt-3" mat-tab-nav-bar>
+    <a mat-tab-link routerLinkActive="active" class="spreadsheets-tab" routerLink="users">Справочник пользователей</a>
+    <a mat-tab-link routerLinkActive="active" class="spreadsheets-tab" routerLink="companies">Справочник компаний</a>
+    <a mat-tab-link routerLinkActive="active" class="spreadsheets-tab" routerLink="mineral-fields">Справочник
+        месторождений</a>
+    <a mat-tab-link routerLinkActive="active" class="spreadsheets-tab" routerLink="clusters">Справочник кустов</a>
+    <a mat-tab-link routerLinkActive="active" class="spreadsheets-tab" routerLink="boreholes">Справочник скважин</a>
+    <a mat-tab-link routerLinkActive="active" class="spreadsheets-tab" routerLink="sensor-parameters">Справочник
+        параметров</a>
+</nav>
+<div class="spreadsheet-wrapper fill overlay-spinner-wrapper">
+    <div class="overlay-spinner">
+        <mat-spinner [diameter]="30"></mat-spinner>
+    </div>
+    <router-outlet></router-outlet>
+</div>

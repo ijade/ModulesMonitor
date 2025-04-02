@@ -1,0 +1,37 @@
+@startuml
+!include .\\Data\ApplicationDbContext.puml
+!include .\\Receiver\Program.puml
+!include .\\Receiver\Startup.puml
+!include .\\SensorEmulator\Program.puml
+!include .\\SensorEmulator\Startup.puml
+!include .\\Common\Constants\ErrorConstants.puml
+!include .\\Common\Constants\RoleConstants.puml
+!include .\\Common\Models\ModuleModel.puml
+!include .\\Common\Models\ResultModel.puml
+!include .\\Common\Models\SensorModel.puml
+!include .\\Common\Models\SensorValueModel.puml
+!include .\\Common\Models\SensorWithValuesModel.puml
+!include .\\Common\Models\UserChartModel.puml
+!include .\\Data\Entities\ApplicationUser.puml
+!include .\\Data\Entities\BaseEntity.puml
+!include .\\Data\Entities\Module.puml
+!include .\\Data\Entities\Sensor.puml
+!include .\\Data\Entities\SensorValue.puml
+!include .\\Receiver\Services\MqttReceiverService.puml
+!include .\\SensorEmulator\Models\EmulatedModule.puml
+!include .\\SensorEmulator\Models\EmulatedSensor.puml
+!include .\\SensorEmulator\Models\EmulatedSensorSettings.puml
+!include .\\SensorEmulator\Models\EmulatedTopic.puml
+!include .\\SensorEmulator\Services\DistributionProviderService.puml
+!include .\\SensorEmulator\Services\MqttEmulatorService.puml
+!include .\\SPA\Controllers\ModuleController.puml
+!include .\\SPA\Controllers\OidcConfigurationController.puml
+!include .\\SPA\Controllers\UserChartController.puml
+!include .\\SPA\Pages\Error.cshtml.puml
+!include .\\SPA\Services\GenericEntityService.puml
+!include .\\SPA\Services\ModuleService.puml
+!include .\\SPA\Services\UserChartService.puml
+!include .\\Common\Models\Paging\PagedList.puml
+!include .\\Common\Models\Paging\PagingParameters.puml
+!include .\\SPA\ClientApp\node_modules\node-gyp\lib\Find-VisualStudio.puml
+@enduml

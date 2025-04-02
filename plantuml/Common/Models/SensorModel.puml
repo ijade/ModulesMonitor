@@ -1,0 +1,9 @@
+@startuml
+class SensorModel {
+    + Id : int <<get>> <<set>>
+    + PositionIndex : int <<get>> <<set>>
+    + DecimalPlaces : int <<get>> <<set>>
+    + MeasuringUnitName : string <<get>> <<set>>
+    + Module : ModuleModel? <<get>> <<set>> = null
+}
+@enduml

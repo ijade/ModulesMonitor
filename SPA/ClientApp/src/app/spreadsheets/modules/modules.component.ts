@@ -37,8 +37,6 @@ export class ModulesComponent
     }
 
     public DateToString(date: Moment): string{
-        console.log(date);
-
         return date.toLocaleString();
     }
 }

@@ -32,17 +32,17 @@
             <mat-error *ngIf="form.controls['mineralField'].invalid">Укажите месторождение</mat-error>
         </mat-form-field> -->
 
-        <!-- <div class="mb-4">
-            <button mat-flat-button type="button" (click)="addSensorValueBinding()" color="primary">Добавить
+        <div class="mb-4">
+            <button mat-flat-button type="button" (click)="addSensor()" color="primary">Добавить
                 датчик
                 параметр</button>
-        </div> -->
+        </div>
         <div cdkDropList cdkDropListOrientation="vertical" (cdkDropListDropped)="drop($event)"
             formArrayName="sensors" class="drag-list d-flex flex-column">
             <ng-container *ngFor="let sensorValueBinding of sensors; let i = index">
                 <app-sensor-value-binding class="col-12 align-items-center" style="min-height: 57px;"
                      [model]="sensorValueBinding"
-                    (onDelete)="deleteSensorValueBinding($event)" [SaveByParent]="SaveByParent"
+                    (onDelete)="deleteSensor($event)" [SaveByParent]="SaveByParent"
                     (onSave)="onSaveSensor()" [isEditingBorehole]="isEditing">
                 </app-sensor-value-binding>
             </ng-container>

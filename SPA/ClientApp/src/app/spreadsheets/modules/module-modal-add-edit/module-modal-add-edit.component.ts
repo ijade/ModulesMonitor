@@ -67,7 +67,7 @@ export class ModuleModalAddEditComponent implements OnInit {
         name: [''],
         description: [''],
         mqttTopic: ['', ],
-        sensors: new FormArray([]),
+        sensors: this.formBuilder.array(this.sensors),
       });
   }
 
@@ -106,6 +106,8 @@ export class ModuleModalAddEditComponent implements OnInit {
   }
 
   onSubmit() {
+    this.saveAllBindings();
+    
     if (!this.form.valid) {
         return;
     }
@@ -119,11 +121,23 @@ export class ModuleModalAddEditComponent implements OnInit {
     moveItemInArray(this.sensors, event.previousIndex, event.currentIndex);
     moveItemInArray(this.form.value.sensors, event.previousIndex, event.currentIndex);
     for (let i = 0; i < this.form.value.sensors.length; i++) {
-      this.form.value.sensors[i].orderNum = i;
+      this.form.value.sensors[i].positionIndex = i;
     }
   }
 
-  deleteSensorValueBinding(positionIndex: number): void {
+  addSensor(): void{
+    this.sensors.push({ positionIndex: this.sensors.length, isNew: true, measuringUnitName: '' } as SensorModel);
+
+    const formArr = this.form.controls.sensors as FormArray;
+
+    formArr.push(this.formBuilder.group({
+      sensorParameter: [{}, Validators.required],
+      positionIndex: this.sensors.length,
+      valueType: [{}, Validators.required]
+    }));
+  }
+
+  deleteSensor(positionIndex: number): void {
     this.sensors = this.sensors.filter(x => x.positionIndex !== positionIndex);
 
     for (let i = 0; i < this.sensors.length; i++) {

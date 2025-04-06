@@ -28,6 +28,7 @@ builder.Services.AddAutoMapper(options =>
 
     options.CreateMap<Sensor, SensorModel>()
         .ReverseMap();
+        //.ForMember(x => x.Module, x => x.Ignore());
     options.CreateMap<Sensor, SensorWithValuesModel>()
         .ReverseMap();
 

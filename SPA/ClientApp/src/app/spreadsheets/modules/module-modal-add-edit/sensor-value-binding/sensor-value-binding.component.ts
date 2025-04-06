@@ -47,13 +47,15 @@ export class SensorValueBindingComponent implements OnInit {
 
     console.log(this.model);
 
-    this.form = this.formBuilder.group(
-      {
-        decimalPlaces: [this.model.decimalPlaces, Validators.required],
-        measuringUnitName: this.model.measuringUnitName,
-      });
+    if (!this.model.isNew){
+      this.form = this.formBuilder.group(
+        {
+          decimalPlaces: [this.model.decimalPlaces, Validators.required],
+          measuringUnitName: this.model.measuringUnitName,
+        });
+    }
 
-      console.log(this.model);
+    console.log(this.model);
 
     this.SaveByParent.subscribe(() => this.validate());
   }
@@ -72,6 +74,8 @@ export class SensorValueBindingComponent implements OnInit {
   }
 
   validate() {
+    console.log('validae sensor called');
+
     if (!this.form.valid) {
       this.form.markAllAsTouched();
       return;

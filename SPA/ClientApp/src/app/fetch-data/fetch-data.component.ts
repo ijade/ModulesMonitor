@@ -2,13 +2,16 @@ import { Component, Inject, ViewChild } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { BaseChartDirective } from 'ng2-charts';
 import { ChartConfiguration, ChartType } from 'chart.js';
-
+import { HubConnection, HubConnectionBuilder, LogLevel } from '@microsoft/signalr';
+import * as signalR from '@microsoft/signalr';
 
 @Component({
   selector: 'app-fetch-data',
   templateUrl: './fetch-data.component.html'
 })
 export class FetchDataComponent {
+  _hubConnection: HubConnection;
+
   public forecasts: WeatherForecast[] = [];
   @ViewChild(BaseChartDirective) chart?: BaseChartDirective;
   data = [
@@ -90,6 +93,19 @@ export class FetchDataComponent {
     http.get<WeatherForecast[]>(baseUrl + 'userchart').subscribe(result => {
       this.forecasts = result;
     }, error => console.error(error));
+
+    this._hubConnection = new HubConnectionBuilder()
+      .withUrl('http://127.0.0.1:7777/hub', {
+        transport: signalR.HttpTransportType.WebSockets,
+        skipNegotiation: true
+      })
+      .build();
+
+    this._hubConnection.on('MessageReceived', (message) => {
+      console.log(message);
+    });
+
+    this._hubConnection.start()
   }
 }
 

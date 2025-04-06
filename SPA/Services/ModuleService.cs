@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Common.Constants;
 using Common.Models;
 using Data;
 using Data.Entities;
@@ -8,39 +9,46 @@ namespace SPA.Services
 {
     public class ModuleService : GenericEntityService<Module, ModuleModel>
     {
-        public ModuleService(ApplicationDbContext dbContext, IMapper mapper): base(dbContext, mapper) { }
+        public ModuleService(ApplicationDbContext dbContext, IMapper mapper) : base(dbContext, mapper) { }
 
-        public override Task<ResultModel> Add(ModuleModel model)
+        public override async Task<ResultModel> Add(ModuleModel model)
         {
-            throw new NotImplementedException();
+            ResultModel result = new();
+
+            var newEntity = _mapper.Map<Module>(model);
+            _ApplicationDbContext.Attach(newEntity);
+
+            try
+            {
+                await _ApplicationDbContext.SaveChangesAsync();
+            }
+            catch (Exception e)
+            {
+                result.ErrorMessage = ErrorConstants.DATABASE;
+            }
+
+            return result;
         }
 
         public async override Task<ResultModel> Update(ModuleModel model)
         {
-            Module entity = _mapper.Map<ModuleModel, Module>(model);
+            ResultModel result = new();
 
-            await SaveSensors(model, entity);
-            await _ApplicationDbContext.SaveChangesAsync();
+            Module entity = EntitySet
+                .Include(x => x.Sensors)
+                .Single(x => x.Id == model.Id);
+            _mapper.Map(model, entity);
 
-            return new() { ErrorMessage = null };
-        }
-
-        public async Task SaveSensors(ModuleModel model, Module entity)
-        {
-            var newSensorIds = model.Sensors.Select(x => x.Id);
-
-            foreach (var existingSensor in entity.Sensors)
+            try
             {
-                if (newSensorIds.Contains(existingSensor.Id))
-                {
-                    _mapper.Map(model.Sensors.First(x => x.Id == existingSensor.Id), existingSensor);
-                    _ApplicationDbContext.Entry(existingSensor).State = EntityState.Modified;
-                }
-                else
-                {
-                    _ApplicationDbContext.Entry(existingSensor).State = EntityState.Deleted;
-                }
+                await _ApplicationDbContext.SaveChangesAsync();
             }
+            catch (Exception e)
+            {
+                result.ErrorMessage = ErrorConstants.DATABASE;
+            }
+
+            return result;
         }
     }
 }

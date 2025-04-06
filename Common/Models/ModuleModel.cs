@@ -9,7 +9,7 @@
 
         public string MqttTopic { get; set; } = string.Empty;
 
-        public DateTime CreatedAt { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
         public ICollection<SensorModel> Sensors { get; set; } = new List<SensorModel>();
     }

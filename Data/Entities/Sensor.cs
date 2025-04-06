@@ -12,5 +12,7 @@ namespace Data.Entities
 
         [Required]
         public Module Module { get; set; } = null!;
+
+        public int ModuleId { get; set; }
     }
 }

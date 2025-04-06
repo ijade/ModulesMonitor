@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Duende.IdentityServer.EntityFramework.Options;
 using Data.Entities;
+using System.Reflection.Metadata;
 
 namespace Data;
 
@@ -12,6 +13,16 @@ public class ApplicationDbContext : ApiAuthorizationDbContext<ApplicationUser>
         : base(options, operationalStoreOptions)
     {
 
+    }
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+
+        modelBuilder.Entity<Sensor>()
+            .HasOne(x => x.Module)
+            .WithMany(x => x.Sensors)
+            .HasForeignKey(nameof(Sensor.ModuleId));
+
+        base.OnModelCreating(modelBuilder);
     }
 
     public DbSet<Module> Modules { get; set; }

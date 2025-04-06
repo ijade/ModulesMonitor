@@ -11,5 +11,6 @@
         public string MeasuringUnitName { get; set; } = string.Empty;
 
         public ModuleModel? Module { get; set; } = null;
+        public int ModuleId { get; set; }
     }
 }

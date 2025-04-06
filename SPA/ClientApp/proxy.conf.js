@@ -14,7 +14,8 @@ const PROXY_CONFIG = [
       "/Identity",
       "/connect",
       "/ApplyDatabaseMigrations",
-      "/_framework"
+      "/_framework",
+      "/hub"
    ],
     proxyTimeout: 10000,
     target: target,

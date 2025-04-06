@@ -1,10 +1,12 @@
 ﻿using Data;
 using Data.Entities;
+using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using MQTTnet;
 using MQTTnet.Client;
+using Receiver.Hubs;
 using System.Globalization;
 using System.Text;
 
@@ -21,6 +23,7 @@ namespace Receiver.Services
         private readonly IConfigurationRoot _config;
         private readonly ILogger<MqttReceiverService> _logger;
         private readonly IDbContextFactory<ApplicationDbContext> _dbContextFactory;
+        private IHubContext<ChatHub> _hubContext;
 
         private readonly int reCachePulse;
         private readonly int reconnectDelay;
@@ -29,11 +32,16 @@ namespace Receiver.Services
         private const string dateTimeFormat = "yyyy-MM-dd HH:mm:ss.fffzzz";
         private readonly CultureInfo LOCALE = new("en-US");
 
-        public MqttReceiverService(ILoggerFactory loggerFactory, IConfigurationRoot config, IDbContextFactory<ApplicationDbContext> dbContextFactory)
+        public MqttReceiverService(
+            ILoggerFactory loggerFactory,
+            IConfigurationRoot config,
+            IDbContextFactory<ApplicationDbContext> dbContextFactory,
+            IHubContext<ChatHub> hubContext)
         {
             _config = config;
             _logger = loggerFactory.CreateLogger<MqttReceiverService>();
             _dbContextFactory = dbContextFactory;
+            _hubContext = hubContext;
 
             var host = config["MqttClient:Host"];
             var port = Convert.ToInt32(config["MqttClient:Port"]);
@@ -210,7 +218,8 @@ namespace Receiver.Services
                     valueSensor.ReadingDateTime = dateTime;
                     valueSensor.Value = value;
                     valueSensor.Sensor = sensor;
-
+                    
+                    await _hubContext.Clients.All.SendAsync(nameof(ChatHub.NewMessage), (long)1, valueSensor.ToString());
                     _context.Entry(valueSensor).State = EntityState.Added;
 
                     sensorIdx++;

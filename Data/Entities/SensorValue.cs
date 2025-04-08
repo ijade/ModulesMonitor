@@ -18,5 +18,7 @@ namespace Data.Entities
 
         [Required]
         public Sensor Sensor { get; set; } = null!;
+
+        public int SensorId { get; set; }
     }
 }

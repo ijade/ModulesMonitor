@@ -22,6 +22,11 @@ public class ApplicationDbContext : ApiAuthorizationDbContext<ApplicationUser>
             .WithMany(x => x.Sensors)
             .HasForeignKey(nameof(Sensor.ModuleId));
 
+        modelBuilder.Entity<SensorValue>()
+            .HasOne(x => x.Sensor)
+            .WithMany()
+            .HasForeignKey(nameof(SensorValue.SensorId));
+
         base.OnModelCreating(modelBuilder);
     }
 

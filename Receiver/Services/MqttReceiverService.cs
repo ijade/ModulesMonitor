@@ -9,6 +9,7 @@ using MQTTnet.Client;
 using Receiver.Hubs;
 using System.Globalization;
 using System.Text;
+using System.Text.Json;
 
 namespace Receiver.Services
 {
@@ -182,6 +183,7 @@ namespace Receiver.Services
             string topic = topicSrc.ToLower();
             try
             {
+                List<SensorValue> currentValues = new List<SensorValue>();
                 var module = cachedModules ?.FirstOrDefault(x => x.MqttTopic == topic);
 
                 if (module == null)
@@ -217,15 +219,21 @@ namespace Receiver.Services
                     var valueSensor = new SensorValue();
                     valueSensor.ReadingDateTime = dateTime;
                     valueSensor.Value = value;
-                    valueSensor.Sensor = sensor;
-                    
-                    await _hubContext.Clients.All.SendAsync(nameof(ChatHub.NewMessage), (long)1, valueSensor.ToString());
-                    _context.Entry(valueSensor).State = EntityState.Added;
+                    valueSensor.SensorId = sensor.Id;
+                    currentValues.Add(valueSensor);
 
                     sensorIdx++;
                 }
 
+                await _hubContext.Clients.All.SendAsync(
+                    nameof(ChatHub.NewMessage),
+                    JsonSerializer.Serialize<List<SensorValue>>(currentValues)
+                );
+
+                _context.SensorValues.AddRange(currentValues);
+ 
                 _logger.LogDebug($"New message added to context successfully");
+                currentValues.Clear();
             }
             catch (Exception e)
             {

@@ -32,6 +32,8 @@ import { NotificationService } from './services/NotificationService';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { SensorValueBindingComponent } from './spreadsheets/modules/module-modal-add-edit/sensor-value-binding/sensor-value-binding.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import { GraphComponent } from './fetch-data/graph/graph.component';
+import { NgxMatDatetimePickerModule } from '@angular-material-components/datetime-picker';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,8 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     ModuleModalAddEditComponent,
     ModulesComponent,
     SearchBarComponent,
-    SensorValueBindingComponent
+    SensorValueBindingComponent,
+    GraphComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -67,6 +70,7 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     MatPaginatorModule,
     MatSnackBarModule,
     DragDropModule, 
+    NgxMatDatetimePickerModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'counter', component: CounterComponent },

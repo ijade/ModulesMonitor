@@ -21,7 +21,7 @@ public class UserChartController : ControllerBase
         _userChartService = userChartService;
     }
 
-    [HttpGet]
+    [HttpGet("query")]
     public async Task<ICollection<UserChartModel>> GetUserCharts()
     {
         return await _userChartService.GetUserCharts();

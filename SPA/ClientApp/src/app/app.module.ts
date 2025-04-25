@@ -33,7 +33,8 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { SensorValueBindingComponent } from './spreadsheets/modules/module-modal-add-edit/sensor-value-binding/sensor-value-binding.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { GraphComponent } from './fetch-data/graph/graph.component';
-import { NgxMatDatetimePickerModule } from '@angular-material-components/datetime-picker';
+import { NGX_MAT_DATE_FORMATS, NgxMatDatetimePickerModule } from '@angular-material-components/datetime-picker';
+import { NgxMatMomentModule } from '@angular-material-components/moment-adapter';
 
 @NgModule({
   declarations: [
@@ -69,6 +70,7 @@ import { NgxMatDatetimePickerModule } from '@angular-material-components/datetim
     MatSortModule,
     MatPaginatorModule,
     MatSnackBarModule,
+    NgxMatMomentModule,
     DragDropModule, 
     NgxMatDatetimePickerModule,
     RouterModule.forRoot([
@@ -83,7 +85,16 @@ import { NgxMatDatetimePickerModule } from '@angular-material-components/datetim
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: AuthorizeInterceptor, multi: true },
-    NotificationService
+    NotificationService,
+    {
+      provide: NGX_MAT_DATE_FORMATS,
+      useValue: {
+        display: {
+          dateInput: 'DD.MM.YYYY, HH:mm:ss',
+          monthYearLabel: 'MMM YYYY',
+        },
+      },
+  },
   ],
   bootstrap: [AppComponent]
 })

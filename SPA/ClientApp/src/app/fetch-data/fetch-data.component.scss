@@ -1,0 +1,139 @@
+@import "/src/palette.scss";
+@import "/src/variables.scss";
+
+$child-header-height: 80px;
+$legend-container-wrapper-height: 19px;
+
+.child-header {
+  display: flex;
+  align-items: center;
+  height: $child-header-height;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-bottom: 1px $dark-dividers solid;
+
+  >* {
+    margin-right: 1rem;
+  }
+
+  .toogle {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
+.RTButton {
+  font-size: 2.3rem;
+  padding: 0.12em 0;
+  height: auto !important;
+  width: auto !important;
+
+}
+
+.isOnline {
+  color: #d50000;
+  border: 2px solid #d50000 !important;
+}
+
+.overlay-datetime {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 70px;
+  background-color: rgba($dark-gray, 0.1);
+  z-index: 1;
+}
+
+.graphs {
+  // padding: 0rem 1rem;
+  display: flex;
+  overflow-x: visible;
+  overflow-y: scroll;
+  width: max-content;
+
+  .graph {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin-right: 15px;
+
+    &:last-child{
+      margin-right: 0px;
+    }
+  }
+}
+
+#graphsContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-left: 5px;
+  overflow-x: auto;
+}
+
+.legend-container-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: max-content;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+::ng-deep {
+  .mat-slide-toggle {
+    margin: 0 10px;
+  }
+}
+
+::ng-deep {
+  .panel {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: $dark-dividers 2px solid;
+
+    .search {
+      border-bottom: $dark-dividers 2px solid;
+      padding: 0.25rem 1rem;
+    }
+
+    .field {
+      width: 100%;
+    }
+
+    .combo-box {
+      margin-top: 10px;
+    }
+
+    .mat-form-field-wrapper {
+      padding-bottom: 0 !important;
+    }
+
+    .mat-form-field-underline {
+      opacity: 0;
+    }
+  }
+
+  .child-header {
+    height: 10vh !important;
+
+    .mat-form-field-wrapper {
+      padding-bottom: 0 !important;
+    }
+
+    .mat-form-field-underline {
+      display: none;
+    }
+  }
+}
+
+.table {
+  overflow-y: scroll;
+  overflow-x: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  height: calc(100vh - $child-header-height - $header-height - $footer-height);
+}

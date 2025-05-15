@@ -1,0 +1,7 @@
+@startuml
+class UserChartService {
+    <<const>> TakeLastValuesCount : int = 200
+    + UserChartService(context:ApplicationDbContext)
+    + <<async>> GetUserCharts() : Task<ICollection<UserChartModel>>
+}
+@enduml

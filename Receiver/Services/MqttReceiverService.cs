@@ -1,12 +1,15 @@
 ﻿using Data;
 using Data.Entities;
+using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using MQTTnet;
 using MQTTnet.Client;
+using Receiver.Hubs;
 using System.Globalization;
 using System.Text;
+using System.Text.Json;
 
 namespace Receiver.Services
 {
@@ -17,20 +20,29 @@ namespace Receiver.Services
         private List<Module> cachedModules;
         private CancellationToken cancellationToken;
 
-        private Context _context;
+        private ApplicationDbContext _context;
         private readonly IConfigurationRoot _config;
         private readonly ILogger<MqttReceiverService> _logger;
+        private readonly IDbContextFactory<ApplicationDbContext> _dbContextFactory;
+        private IHubContext<ChatHub> _hubContext;
+
         private readonly int reCachePulse;
         private readonly int reconnectDelay;
         private Task loopTask;
 
         private const string dateTimeFormat = "yyyy-MM-dd HH:mm:ss.fffzzz";
-        private readonly CultureInfo LOCALE = new CultureInfo("en-US");
+        private readonly CultureInfo LOCALE = new("en-US");
 
-        public MqttReceiverService(ILoggerFactory loggerFactory, IConfigurationRoot config)
+        public MqttReceiverService(
+            ILoggerFactory loggerFactory,
+            IConfigurationRoot config,
+            IDbContextFactory<ApplicationDbContext> dbContextFactory,
+            IHubContext<ChatHub> hubContext)
         {
             _config = config;
             _logger = loggerFactory.CreateLogger<MqttReceiverService>();
+            _dbContextFactory = dbContextFactory;
+            _hubContext = hubContext;
 
             var host = config["MqttClient:Host"];
             var port = Convert.ToInt32(config["MqttClient:Port"]);
@@ -138,15 +150,7 @@ namespace Receiver.Services
         {
             while (!cancellationToken.IsCancellationRequested)
             {
-                using
-                (
-                    _context = new Context
-                    (
-                        new DbContextOptionsBuilder<Context>()
-                            .UseNpgsql(_config.GetConnectionString("DefaultConnection"))
-                            .Options
-                    )
-                )
+                using (_context = await _dbContextFactory.CreateDbContextAsync(cancellationToken))
                 {
                     try
                     {
@@ -154,7 +158,7 @@ namespace Receiver.Services
                         {
                             await Reconnect();
                         }
-                        _logger.LogInformation("Loading boreholes");
+                        _logger.LogInformation("Loading modules...");
 
                         cachedModules = await _context.Modules
                             .Include(x => x.Sensors)
@@ -174,10 +178,12 @@ namespace Receiver.Services
             }
         }
 
-        private async Task ProcessValue(string topic, string message)
+        private async Task ProcessValue(string topicSrc, string message)
         {
+            string topic = topicSrc.ToLower();
             try
             {
+                List<SensorValue> currentValues = new List<SensorValue>();
                 var module = cachedModules ?.FirstOrDefault(x => x.MqttTopic == topic);
 
                 if (module == null)
@@ -213,18 +219,26 @@ namespace Receiver.Services
                     var valueSensor = new SensorValue();
                     valueSensor.ReadingDateTime = dateTime;
                     valueSensor.Value = value;
-                    valueSensor.Sensor = sensor;
-
-                    _context.Entry(valueSensor).State = EntityState.Added;
+                    valueSensor.SensorId = sensor.Id;
+                    currentValues.Add(valueSensor);
 
                     sensorIdx++;
                 }
 
+                await _hubContext.Clients.All.SendAsync(
+                    nameof(ChatHub.NewMessage),
+                    JsonSerializer.Serialize<List<SensorValue>>(currentValues)
+                );
+
+                _context.SensorValues.AddRange(currentValues);
+ 
                 _logger.LogDebug($"New message added to context successfully");
+                currentValues.Clear();
             }
             catch (Exception e)
             {
                 _logger.LogError($"Error while recording message {e.Message}");
+                File.AppendAllText("DeadLetterQueue.txt", message); 
             }
         }
     }

@@ -1,27 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace Data.Entities
 {
-    public class Module
+    public class Module : BaseEntity
     {
-        [Key]
-        public int Id { get; set; }
-
         [Required]
-        public string Name { get; set; }
+        public string Name { get; set; } = string.Empty;
 
         public string? Description { get; set; }
 
         [Required]
-        public string MqttTopic { get; set; }
+        public string MqttTopic { get; set; } = string.Empty;
 
         public DateTime CreatedAt { get; set; }
 
-        public ICollection<Sensor> Sensors { get; set; }
+        public ICollection<Sensor> Sensors { get; set; } = new List<Sensor>();
     }
 }

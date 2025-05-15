@@ -1,0 +1,12 @@
+@startuml
+class Module {
+    + Name : string <<get>> <<set>>
+    + Description : string? <<get>> <<set>>
+    + MqttTopic : string <<get>> <<set>>
+}
+class "ICollection`1"<T> {
+}
+BaseEntity <|-- Module
+Module --> "CreatedAt" DateTime
+Module o-> "Sensors<Sensor>" "ICollection`1"
+@enduml

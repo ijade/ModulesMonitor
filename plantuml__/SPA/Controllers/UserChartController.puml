@@ -1,0 +1,7 @@
+@startuml
+class UserChartController {
+    + UserChartController(logger:ILogger<UserChartController>, userChartService:UserChartService)
+    + <<async>> GetUserCharts() : Task<ICollection<UserChartModel>>
+}
+ControllerBase <|-- UserChartController
+@enduml

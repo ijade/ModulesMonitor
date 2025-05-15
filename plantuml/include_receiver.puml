@@ -1,0 +1,11 @@
+@startuml
+!include .\\Data\ApplicationDbContext.puml
+!include .\\Receiver\Program.puml
+!include .\\Receiver\Startup.puml
+!include .\\Data\Entities\ApplicationUser.puml
+!include .\\Data\Entities\BaseEntity.puml
+!include .\\Data\Entities\Module.puml
+!include .\\Data\Entities\Sensor.puml
+!include .\\Data\Entities\SensorValue.puml
+!include .\\Receiver\Services\MqttReceiverService.puml
+@enduml

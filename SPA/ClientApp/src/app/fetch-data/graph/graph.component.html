@@ -1,0 +1,38 @@
+<div class="title">
+    <h2 title="{{ userChart.name }}">
+      {{ userChart.name }}
+    </h2>
+    <div class="spacer"></div>
+  
+    <button
+      *ngFor="let item of this.userChart.sensors"
+      id="btn-{{this.index}}-{{item.positionIndex}}"
+      [hidden]="true"
+      (click)="editParameter(this.index, item.positionIndex)"
+    ></button>
+  
+    <button
+      mat-icon-button
+      matTooltip="Нажмите для редактирования данных"
+      (click)="editBindings()"
+    >
+      <mat-icon class="small-icon">edit</mat-icon>
+    </button>
+
+  </div>
+
+  <div *ngIf="isScrollLocked" class="d-flex justify-content-center"><mat-spinner [diameter]="30"></mat-spinner></div>
+  
+  <div class="fill">
+    <canvas
+      #canvas
+      class="chart"
+      baseChart
+      [datasets]="chartDataSet"
+      [options]="lineChartOptions"
+      [type]="lineChartType"
+      height="100%"
+    >
+    </canvas>
+  </div>
+  

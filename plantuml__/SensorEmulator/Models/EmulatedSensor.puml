@@ -1,0 +1,8 @@
+@startuml
+class EmulatedSensor {
+}
+class "List`1"<T> {
+}
+EmulatedSensor --> "EmulatedSensorSettings" EmulatedSensorSettings
+EmulatedSensor --> "FakeTopics<EmulatedTopic>" "List`1"
+@enduml

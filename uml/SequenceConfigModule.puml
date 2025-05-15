@@ -1,0 +1,19 @@
+@startuml
+actor Пользователь as User
+participant "Веб-интерфейс" as UI
+participant "Backend API" as API
+participant "MQTT Брокер" as Broker
+
+
+
+User -> UI: 1. Открывает дерево топиков (sensors/#)
+UI -> API: 2. Запрос списка топиков (GET /api/mqtt/topics)
+API -> Broker: 3. Запрос активных топиков (MQTT $SYS/broker/subscriptions)
+Broker --> API: 4. Список топиков (sensors/temp/1, sensors/humidity/2...)
+API --> UI: 5. Отправка структурированного дерева (JSON)
+UI -> User: 6. Отображение дерева (например, sensors/↳ temp/1, humidity/2)
+
+User -> UI: 7. Выбирает топик (sensors/temp/1) и настройки
+UI -> API: 8. Отправка конфигурации (PUT)
+
+@enduml

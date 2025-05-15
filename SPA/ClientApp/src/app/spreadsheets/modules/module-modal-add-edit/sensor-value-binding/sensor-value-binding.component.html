@@ -1,0 +1,44 @@
+<ng-container [formGroup]="form">
+    <div class="drag-box sensorValueBinding d-flex align-items-center" cdkDrag cdkDragLockAxis="y">
+        <!-- <mat-form-field *ngIf="isEditing" class="col-4">
+            <mat-select placeholder="Параметр" formControlName="sensorParameter" [compareWith]="optionCompareMethod">
+                <mat-option *ngFor="let sensorparameter of sensorparameters"
+                    [value]="sensorparameter">{{sensorparameter.description}} 
+                    {{sensorparameter.valueType.name}}</mat-option>
+            </mat-select>
+            <mat-error *ngIf="form.controls['sensorParameter'].invalid">Укажите параметр</mat-error>
+        </mat-form-field>
+        <span *ngIf="!isEditing" class="col-4" style="height: 20px;">{{toString(model)}}</span> -->
+
+        <mat-form-field *ngIf="isEditing">
+            <mat-hint>Описание модуля</mat-hint>
+            <input matInput placeholder="Единица измерения" autocompleteOff formControlName="measuringUnitName">
+            <!-- <mat-error *ngIf="form.controls['measuringUnitName'].invalid">Укажите корректное описание модуля</mat-error> -->
+        </mat-form-field>
+        <span *ngIf="!isEditing" class="col-4" style="height: 20px;">{{model.measuringUnitName}}</span>
+
+        <mat-form-field *ngIf="isEditing">
+            <mat-hint>Количество знаков после запятой</mat-hint>
+            <input matInput placeholder="Точность" autocompleteOff formControlName="decimalPlaces" type="number" min="0" step="1">
+            <mat-error *ngIf="form.controls['decimalPlaces'].invalid">Укажите корректное описание модуля</mat-error>
+        </mat-form-field>
+        <span *ngIf="!isEditing" class="col-4" style="height: 20px;">Точность: {{model.decimalPlaces}}</span>
+
+        <div class="ms-4 cell-buttons col-2 d-flex flex-row">
+            <button *ngIf="!isEditing" mat-icon-button matTooltip="Нажмите для редактирования" (click)="edit()">
+                <mat-icon>edit</mat-icon>
+            </button>
+
+            <button *ngIf="!isEditing" type="button" mat-icon-button matTooltip="Нажмите для удаления" (click)="delete(model.positionIndex)">
+                <mat-icon>delete</mat-icon>
+            </button>
+
+            <button [ngClass]="{'d-none': isEditing}" cdkDragHandle type="button" mat-icon-button [disableRipple]="true"
+                matTooltip="Передвигайте для изменения порядка">
+                <mat-icon>reorder</mat-icon>
+            </button>
+            
+            <button *ngIf="isEditing && isEditingBorehole" mat-flat-button type="button" (click)="save()" style="height: 35px;" class="w-100" color="primary">Сохранить</button>
+        </div>
+    </div>
+</ng-container>

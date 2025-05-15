@@ -1,0 +1,6 @@
+@startuml
+class Startup {
+    + Startup()
+    + ConfigureServices(services:IServiceCollection) : void
+}
+@enduml

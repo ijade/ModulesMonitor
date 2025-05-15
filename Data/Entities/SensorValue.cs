@@ -7,18 +7,18 @@ using System.Threading.Tasks;
 
 namespace Data.Entities
 {
-    public class SensorValue
+    public class SensorValue : BaseEntity
     {
-        [Key]
-        public int Id {  get; set; }
 
         [Required]
         public DateTime ReadingDateTime {  get; set; }
 
         [Required]
-        public string Value { get; set; }
+        public string Value { get; set; } = string.Empty;
 
         [Required]
-        public Sensor Sensor { get; set; }
+        public Sensor Sensor { get; set; } = null!;
+
+        public int SensorId { get; set; }
     }
 }

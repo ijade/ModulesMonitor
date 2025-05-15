@@ -1,0 +1,24 @@
+<div class="tree-container">
+    <h1>Выбор топика</h1>
+    <mat-tree [dataSource]="dataSource" [treeControl]="treeControl">
+        <mat-tree-node *matTreeNodeDef="let node" matTreeNodePadding>
+                <button mat-icon-button disabled></button>
+                {{node.name}}
+                <div class="spacer"></div>
+                <mat-checkbox class="ms-3" [indeterminate]="node.isIndeterminate" [checked]="node.isSelected" mat-icon-button (click)="onSelect(node)" color="primary">
+                </mat-checkbox>
+        </mat-tree-node>
+        <mat-tree-node *matTreeNodeDef="let node; when: hasChild" matTreeNodePadding>
+            <button mat-icon-button [attr.aria-label]="'Toggle ' + node.item" matTreeNodeToggle disableRipple>
+                <mat-icon class="mat-icon-rtl-mirror">
+                    {{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
+                </mat-icon>
+            </button>
+            {{node.name}}
+            <div class="spacer"></div>
+            <mat-checkbox class="ms-3" [indeterminate]="node.isIndeterminate" [checked]="node.isSelected" mat-icon-button (click)="onSelect(node)" color="primary">
+            </mat-checkbox>
+            <mat-progress-bar *ngIf="node.isLoading" mode="indeterminate" class="tree-progress-bar"></mat-progress-bar>
+        </mat-tree-node>
+    </mat-tree>
+</div>

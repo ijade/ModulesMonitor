@@ -1,0 +1,21 @@
+@startuml
+class ResultModel {
+    + ResultModel()
+    + ResultModel(errorMessage:string)
+    + IsSuccess : bool <<get>>
+    + ErrorMessage : string <<get>> <<set>>
+}
+class "ResultModel`1"<T> {
+    + ResultModel()
+    + ResultModel(content:T)
+    + ResultModel(errorMessage:string)
+    + Content : T <<get>> <<set>>
+}
+class "ResultListModel`1"<T> {
+    + TotalCount : int <<get>> <<set>>
+    + PageCount : int <<get>> <<set>>
+    + Data : IEnumerable<T> <<get>> <<set>>
+}
+ResultModel <|-- "ResultModel`1"
+"ResultModel`1" "<T>" <|-- "ResultListModel`1"
+@enduml

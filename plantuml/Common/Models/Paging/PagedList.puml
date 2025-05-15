@@ -1,0 +1,14 @@
+@startuml
+class "PagedList`1"<T> {
+    + Items : List<T> <<get>>
+    + CurrentPage : int <<get>>
+    + PageSize : int <<get>>
+    + TotalCount : int <<get>>
+    + PagedList(items:List<T>, count:int, pageNumber:int, pageSize:int)
+}
+class PaginationExtensions <<static>> {
+    + {static} <<async>> ToPagedList(source:IQueryable<T>, parameters:PagingParameters) : Task<PagedList<T>>
+    + {static} AddSorting(source:IQueryable<T>, fieldParam:string) : IQueryable<T>
+    + {static} AddSearching(source:IQueryable<T>, searchText:string, searchableFieldsString:string) : IQueryable<T>
+}
+@enduml

@@ -1,0 +1,8 @@
+@startuml
+class SensorValue {
+    + Value : string <<get>> <<set>>
+}
+BaseEntity <|-- SensorValue
+SensorValue --> "ReadingDateTime" DateTime
+SensorValue o-> "Sensor" Sensor
+@enduml

@@ -1,0 +1,14 @@
+@startuml
+class "AddDbContext`1"<T> {
+}
+class "AddDefaultIdentity`1"<T> {
+}
+class "AddEntityFrameworkStores`1"<T> {
+}
+class "AddApiAuthorization`2"<T1,T2> {
+}
+class "CreateMap`2"<T1,T2> {
+}
+class "AddTransient`1"<T> {
+}
+@enduml

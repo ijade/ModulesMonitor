@@ -1,0 +1,15 @@
+@import '/src/palette.scss';
+
+$col-1-width: 8.33333333%;
+.sensor-range{
+    text-align: center;
+    margin-left: 1%;
+    width: $col-1-width - 1% !important;
+    input{
+        padding-left: .3rem;
+        color: $dark-primary-text;
+    }
+}
+::ng-deep .readonly .mat-form-field-underline {
+    display: none;
+}

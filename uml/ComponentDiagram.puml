@@ -1,0 +1,73 @@
+@startuml
+'title **Диаграмма компонентов**
+
+
+skinparam dpi 150
+skinparam defaultFontSize 22
+skinparam maxMessageSize 50
+skinparam wrapWidth 200
+skinparam componentStyle uml2
+left to right direction
+
+
+' Основные компоненты системы
+component "Эмуляторы датчиков" as Sensors {
+  component "Генератор данных" as Generator
+  component "MQTT Клиент" as MQTTClient
+}
+
+component "Брокер сообщений (MQTT)" as Broker {
+  interface "MQTT Топики" as Topics
+}
+
+component "Ресивер данных" as Receiver {
+  component "MQTT Подписчик" as MQTTSubscriber
+  component "Обработчик данных" as DataProcessor
+  component "Запись в БД" as DBWriter
+}
+
+component "База данных" as Database {
+  component "PostgreSQL" as DB
+}
+
+component "Веб-сервер" as WebServer {
+  component "Backend API" as API
+  component "Frontend (Angular/Typescript)" as Frontend
+}
+
+' Связи между компонентами
+Sensors --> Broker : "Отправка данных (MQTT)"
+Broker --> Receiver : "Подписка на топики"
+Receiver --> Database : "Сохранение данных"
+WebServer --> Database : "Чтение/запись конфигурации"
+WebServer --> Receiver : "Управление подписками"
+
+' Интерфейсы
+Topics -- MQTTClient
+Topics -- MQTTSubscriber
+API -- Frontend : "REST/WebSocket"
+Frontend -- User : "Веб-интерфейс"
+
+' Дополнительные пояснения
+note right of Sensors
+  **Эмуляторы датчиков:**
+  - Генерируют тестовые данные
+  - Отправляют их в MQTT-брокер
+end note
+
+note left of Receiver
+  **Ресивер данных:**
+  QoS подписки: 2 (at most once)
+end note
+
+note left of Sensors
+  **Эмуляторы датчиков:**
+  QoS публикации: 2 (at most once)
+end note
+
+note left of Broker
+  **Брокер сообщений:**
+  - Mosquitto
+end note
+
+@enduml

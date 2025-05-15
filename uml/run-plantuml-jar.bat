@@ -1,0 +1,1 @@
+java  -jar .\plantuml-1.2025.2.jar -charset UTF-8 ComponentDiagram.puml

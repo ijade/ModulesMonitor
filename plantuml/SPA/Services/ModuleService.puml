@@ -1,0 +1,8 @@
+@startuml
+class ModuleService {
+    + ModuleService(dbContext:ApplicationDbContext, mapper:IMapper)
+    + <<override>> Add(model:ModuleModel) : Task<ResultModel>
+    + <<async>> <<override>> Update(model:ModuleModel) : Task<ResultModel>
+}
+"GenericEntityService`2" "<Module,ModuleModel>" <|-- ModuleService
+@enduml

@@ -1,0 +1,56 @@
+<button class="close-icon" mat-icon-button mat-dialog-close>
+    <mat-icon>close</mat-icon>
+</button>
+
+<h1 mat-dialog-title [ngClass]="{'adding-title': !isEditing, 'px-lg-4': true}">{{modalLabel}}</h1>
+<form [formGroup]="form">
+    <div class="dialog-form d-flex flex-column" mat-dialog-content>
+
+        <mat-form-field class="mb-3">
+            <mat-hint>Название модуля</mat-hint>
+            <input matInput placeholder="Название модуля" autocompleteOff formControlName="name">
+            <mat-error *ngIf="form.controls['name'].invalid">Укажите корректное название модуля</mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="mb-3">
+            <mat-hint>Описание модуля</mat-hint>
+            <input matInput placeholder="Описание модуля" autocompleteOff formControlName="description">
+            <mat-error *ngIf="form.controls['description'].invalid">Укажите корректное описание модуля</mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="mb-3">
+            <mat-hint>Путь к топику</mat-hint>
+            <input matInput placeholder="Путь к топику" autocompleteOff formControlName="mqttTopic">
+            <mat-error *ngIf="form.controls['mqttTopic'].invalid">Укажите корректный путь до топика</mat-error>
+        </mat-form-field>
+        <!-- <mat-form-field>
+            <mat-select placeholder="Наименование месторождения" formControlName="mineralField"
+                [compareWith]="optionCompareMethod">
+                <mat-option *ngFor="let mineralField of mineralFields"
+                    [value]="mineralField">{{mineralField.name}}</mat-option>
+            </mat-select>
+            <mat-error *ngIf="form.controls['mineralField'].invalid">Укажите месторождение</mat-error>
+        </mat-form-field> -->
+
+        <div class="mb-4">
+            <button mat-flat-button type="button" (click)="addSensor()" color="primary">Добавить
+                датчик
+                параметр</button>
+        </div>
+        <div cdkDropList cdkDropListOrientation="vertical" (cdkDropListDropped)="drop($event)"
+            formArrayName="sensors" class="drag-list d-flex flex-column">
+            <ng-container *ngFor="let sensorValueBinding of sensors; let i = index">
+                <app-sensor-value-binding class="col-12 align-items-center" style="min-height: 57px;"
+                     [model]="sensorValueBinding"
+                    (onDelete)="deleteSensor($event)" [SaveByParent]="SaveByParent"
+                    (onSave)="onSaveSensor()" [isEditingBorehole]="isEditing">
+                </app-sensor-value-binding>
+            </ng-container>
+        </div>
+
+    </div>
+    <div class="dialog-buttons ms-3 mb-3" mat-dialog-actions>
+        <button mat-flat-button (click)="onSubmit()" cdkFocusInitial color="primary">{{buttonLabel}}</button>
+        <button mat-button [mat-dialog-close]="true" class="cancel-button" *ngIf="isEditing">Отменить</button>
+    </div>
+</form>

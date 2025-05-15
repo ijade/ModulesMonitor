@@ -1,0 +1,1507 @@
+2025-04-06T17:03:04.1490602+04:00  [INF] Connecting to the server (1fb09abe)
+2025-04-06T17:03:04.3428541+04:00  [INF] Connected succesfully (587d74a0)
+2025-04-06T17:03:09.4406629+04:00  [ERR] It is not allowed to connect with a server after the connection is established. (bb085491)
+2025-04-06T17:03:09.4456257+04:00  [ERR] [null] (12807b18)
+2025-04-06T17:03:09.4596640+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:03:11.3622825+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:03:13.0185628+04:00  [INF] Executed DbCommand ("123"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:03:23.2765831+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:03:23.3318356+04:00  [INF] Context saved successfully
+Count of new records: 0 (dfc23833)
+2025-04-06T17:03:23.3383245+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:03:23.3650043+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:03:23.3971525+04:00  [INF] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:03:33.4142490+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:03:33.4174865+04:00  [INF] Context saved successfully
+Count of new records: 0 (dfc23833)
+2025-04-06T17:03:33.4202506+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:03:33.5000443+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:03:33.5039770+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:03:43.5264063+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:03:43.5299940+04:00  [INF] Context saved successfully
+Count of new records: 0 (dfc23833)
+2025-04-06T17:03:43.5323809+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:03:43.5357972+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:03:43.5383649+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:03:53.5568159+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:03:53.5597633+04:00  [INF] Context saved successfully
+Count of new records: 0 (dfc23833)
+2025-04-06T17:03:53.5640926+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:03:53.5666540+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:03:53.5701338+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:04:03.5815468+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:04:03.5839225+04:00  [INF] Context saved successfully
+Count of new records: 0 (dfc23833)
+2025-04-06T17:04:03.5865594+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:04:03.5895995+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:04:03.5924180+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:04:13.6061834+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:04:13.6089342+04:00  [INF] Context saved successfully
+Count of new records: 0 (dfc23833)
+2025-04-06T17:04:13.6113025+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:04:13.6147242+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:04:13.6165508+04:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:04:23.6261036+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:04:23.6321914+04:00  [INF] Context saved successfully
+Count of new records: 0 (dfc23833)
+2025-04-06T17:04:23.6357411+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:04:23.6394433+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:04:23.6419038+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:04:33.6585906+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:04:33.6623269+04:00  [INF] Context saved successfully
+Count of new records: 0 (dfc23833)
+2025-04-06T17:04:33.6667360+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:04:33.6709634+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:04:33.6737146+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:04:43.6835692+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:04:43.6866697+04:00  [INF] Context saved successfully
+Count of new records: 0 (dfc23833)
+2025-04-06T17:04:43.6901090+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:04:43.6938658+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:04:43.6964512+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:04:53.7109033+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:04:53.7142376+04:00  [INF] Context saved successfully
+Count of new records: 0 (dfc23833)
+2025-04-06T17:04:53.7171309+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:04:53.7198378+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:04:53.7216452+04:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:05:03.7360228+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:05:03.7391202+04:00  [INF] Context saved successfully
+Count of new records: 0 (dfc23833)
+2025-04-06T17:05:03.7411545+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:05:03.7442204+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:05:03.7468980+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:05:13.7692950+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:05:13.7720730+04:00  [INF] Context saved successfully
+Count of new records: 0 (dfc23833)
+2025-04-06T17:05:13.7747201+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:05:13.7790750+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:05:13.7820078+04:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:05:23.7982418+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:05:23.8004405+04:00  [INF] Context saved successfully
+Count of new records: 0 (dfc23833)
+2025-04-06T17:05:23.8023996+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:05:23.8051976+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:05:23.8079084+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:05:33.8177341+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:05:33.8195081+04:00  [INF] Context saved successfully
+Count of new records: 0 (dfc23833)
+2025-04-06T17:05:33.8219678+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:05:33.8250961+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:05:33.8273838+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:05:43.8341310+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:05:43.8365425+04:00  [INF] Context saved successfully
+Count of new records: 0 (dfc23833)
+2025-04-06T17:05:43.8399033+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:05:43.8437600+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:05:43.8462705+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:05:53.8727154+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:05:53.8757044+04:00  [INF] Context saved successfully
+Count of new records: 0 (dfc23833)
+2025-04-06T17:05:53.8789911+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:05:53.8827271+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:05:53.8848500+04:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:06:03.8948959+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:06:03.8971827+04:00  [INF] Context saved successfully
+Count of new records: 0 (dfc23833)
+2025-04-06T17:06:03.9008049+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:06:03.9050328+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:06:03.9086870+04:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:06:13.9316730+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:06:13.9346364+04:00  [INF] Context saved successfully
+Count of new records: 0 (dfc23833)
+2025-04-06T17:06:13.9371129+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:06:13.9408612+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:06:13.9430028+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:06:23.9605064+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:06:23.9639633+04:00  [INF] Context saved successfully
+Count of new records: 0 (dfc23833)
+2025-04-06T17:06:23.9671168+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:06:23.9705113+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:06:23.9727866+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:06:33.9848616+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:06:33.9868492+04:00  [INF] Context saved successfully
+Count of new records: 0 (dfc23833)
+2025-04-06T17:06:33.9893005+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:06:33.9922482+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:06:33.9945194+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:06:44.0107439+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:06:44.0132152+04:00  [INF] Context saved successfully
+Count of new records: 0 (dfc23833)
+2025-04-06T17:06:44.0158938+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:06:44.0196696+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:06:44.0220545+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:06:54.0322447+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:06:54.0345655+04:00  [INF] Context saved successfully
+Count of new records: 0 (dfc23833)
+2025-04-06T17:06:54.0363862+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:06:54.0395483+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:06:54.0427021+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:07:04.0510235+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:07:04.0538469+04:00  [INF] Context saved successfully
+Count of new records: 0 (dfc23833)
+2025-04-06T17:07:04.0564874+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:07:04.0594679+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:07:04.0621924+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:07:14.0811319+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:07:14.0837601+04:00  [INF] Context saved successfully
+Count of new records: 0 (dfc23833)
+2025-04-06T17:07:14.0878559+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:07:14.0911104+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:07:14.0935169+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:07:24.0981835+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:07:24.1008575+04:00  [INF] Context saved successfully
+Count of new records: 0 (dfc23833)
+2025-04-06T17:07:24.1036354+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:07:24.1069996+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:07:24.1092280+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:07:34.1134637+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:07:34.1160922+04:00  [INF] Context saved successfully
+Count of new records: 0 (dfc23833)
+2025-04-06T17:07:34.1197654+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:07:34.1230909+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:07:34.1267027+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:07:44.1528079+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:07:44.1556067+04:00  [INF] Context saved successfully
+Count of new records: 0 (dfc23833)
+2025-04-06T17:07:44.1582237+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:07:44.1614286+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:07:44.1640624+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:07:54.1796837+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:07:54.1824417+04:00  [INF] Context saved successfully
+Count of new records: 0 (dfc23833)
+2025-04-06T17:07:54.1854399+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:07:54.1889516+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:07:54.1916936+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:08:04.2061313+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:08:04.2094465+04:00  [INF] Context saved successfully
+Count of new records: 0 (dfc23833)
+2025-04-06T17:08:04.2123516+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:08:04.2156976+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:08:04.2184598+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:08:14.2372888+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:08:14.2401724+04:00  [INF] Context saved successfully
+Count of new records: 0 (dfc23833)
+2025-04-06T17:08:14.2435713+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:08:14.2469216+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:08:14.3252550+04:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:08:24.3348192+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:08:24.3408046+04:00  [INF] Context saved successfully
+Count of new records: 0 (dfc23833)
+2025-04-06T17:08:24.3435583+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:08:24.3472768+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:08:24.3491463+04:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:08:34.3659095+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:08:34.3689528+04:00  [INF] Context saved successfully
+Count of new records: 0 (dfc23833)
+2025-04-06T17:08:34.3718216+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:08:34.3753740+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:08:34.3783654+04:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:08:44.3934597+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:08:44.3973314+04:00  [INF] Context saved successfully
+Count of new records: 0 (dfc23833)
+2025-04-06T17:08:44.4004860+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:08:44.4038260+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:08:44.4061853+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:08:54.4238322+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:08:54.4271087+04:00  [INF] Context saved successfully
+Count of new records: 0 (dfc23833)
+2025-04-06T17:08:54.4304014+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:08:54.4331737+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:08:54.4353464+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:09:04.4523507+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:09:04.4562531+04:00  [INF] Context saved successfully
+Count of new records: 0 (dfc23833)
+2025-04-06T17:09:04.4587166+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:09:04.4618310+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:09:04.4650976+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:09:14.4805559+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:09:14.4843501+04:00  [INF] Context saved successfully
+Count of new records: 0 (dfc23833)
+2025-04-06T17:09:14.4876327+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:09:14.4911585+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:09:14.4936998+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:09:24.5117474+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:09:24.5149383+04:00  [INF] Context saved successfully
+Count of new records: 0 (dfc23833)
+2025-04-06T17:09:24.5182602+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:09:24.5226007+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:09:24.5247873+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:09:34.5442064+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:09:34.5466441+04:00  [INF] Context saved successfully
+Count of new records: 0 (dfc23833)
+2025-04-06T17:09:34.5492298+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:09:34.5523477+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:09:34.5547272+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:09:44.5627206+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:09:44.5657093+04:00  [INF] Context saved successfully
+Count of new records: 0 (dfc23833)
+2025-04-06T17:09:44.5686171+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:09:44.5711502+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:09:44.5734681+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:09:54.5801567+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:09:54.5827254+04:00  [INF] Context saved successfully
+Count of new records: 0 (dfc23833)
+2025-04-06T17:09:54.5854717+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:09:54.5885729+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:09:54.5909577+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:10:04.6095059+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:10:04.6115238+04:00  [INF] Context saved successfully
+Count of new records: 0 (dfc23833)
+2025-04-06T17:10:04.6143310+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:10:04.6171903+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:10:04.6188696+04:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:10:14.6272659+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:10:14.6287958+04:00  [INF] Context saved successfully
+Count of new records: 0 (dfc23833)
+2025-04-06T17:10:14.6304229+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:10:14.6325266+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:10:14.6341038+04:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:10:24.6468139+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:10:24.6485720+04:00  [INF] Context saved successfully
+Count of new records: 0 (dfc23833)
+2025-04-06T17:10:24.6502729+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:10:24.6523153+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:10:24.6537505+04:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:10:34.6658525+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:10:34.6675545+04:00  [INF] Context saved successfully
+Count of new records: 0 (dfc23833)
+2025-04-06T17:10:34.6690550+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:10:34.6706912+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:10:34.6720414+04:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:10:44.6773375+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:10:44.6793377+04:00  [INF] Context saved successfully
+Count of new records: 0 (dfc23833)
+2025-04-06T17:10:44.6816736+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:10:44.6840005+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:10:44.6860348+04:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:11:47.6916003+04:00  [INF] Connecting to the server (1fb09abe)
+2025-04-06T17:11:47.8701063+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:11:47.8741320+04:00  [INF] Connected succesfully (587d74a0)
+2025-04-06T17:11:48.1550303+04:00  [INF] Now listening on: "https://localhost:52608" (d826f4b8)
+2025-04-06T17:11:48.1573509+04:00  [INF] Now listening on: "http://localhost:52609" (d826f4b8)
+2025-04-06T17:11:48.2206147+04:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2025-04-06T17:11:48.2263423+04:00  [INF] Hosting environment: "Development" (c3307c92)
+2025-04-06T17:11:48.2292309+04:00  [INF] Content root path: "C:\Users\laptop\source\repos\ModulesMonitor\Receiver\" (b5d60022)
+2025-04-06T17:11:48.9505768+04:00 0HNBL1IBA4CVP:00000001 [INF] Request starting HTTP/2 GET https://localhost:52608/ - - (ca22a1cb)
+2025-04-06T17:11:49.1288066+04:00 0HNBL1IBA4CVP:00000001 [INF] Request finished HTTP/2 GET https://localhost:52608/ - - - 404 0 - 181.5532ms (791a596a)
+2025-04-06T17:11:49.2556048+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:11:50.3706540+04:00  [INF] Executed DbCommand ("75"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:12:00.5346945+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:12:00.5741227+04:00  [INF] Context saved successfully
+Count of new records: 0 (dfc23833)
+2025-04-06T17:12:00.5817289+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:12:00.5856500+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:12:00.5965236+04:00  [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:12:10.6213747+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:12:10.6240295+04:00  [INF] Context saved successfully
+Count of new records: 0 (dfc23833)
+2025-04-06T17:12:10.6280813+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:12:10.6817387+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:12:10.6850053+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:12:20.2372629+04:00 0HNBL1IBA4CVR:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:52609/hub - - (ca22a1cb)
+2025-04-06T17:12:20.2425017+04:00 0HNBL1IBA4CVR:00000002 [INF] Executing endpoint '"/hub"' (500cc934)
+2025-04-06T17:12:20.6893515+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:12:20.6920770+04:00  [INF] Context saved successfully
+Count of new records: 0 (dfc23833)
+2025-04-06T17:12:20.6956164+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:12:20.6995029+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:12:20.7031550+04:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:12:30.7191136+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:12:30.7213481+04:00  [INF] Context saved successfully
+Count of new records: 0 (dfc23833)
+2025-04-06T17:12:30.7235218+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:12:30.7260920+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:12:30.7282214+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:12:40.7419533+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:12:40.7444219+04:00  [INF] Context saved successfully
+Count of new records: 0 (dfc23833)
+2025-04-06T17:12:40.7469219+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:12:40.7496905+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:12:40.7515995+04:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:22:22.2416209+04:00  [INF] Connecting to the server (1fb09abe)
+2025-04-06T17:22:22.4567499+04:00  [INF] Connected succesfully (587d74a0)
+2025-04-06T17:22:22.6579435+04:00  [INF] Now listening on: "https://localhost:52608" (d826f4b8)
+2025-04-06T17:22:22.6626165+04:00  [INF] Now listening on: "http://localhost:52609" (d826f4b8)
+2025-04-06T17:22:22.7081318+04:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2025-04-06T17:22:22.7155152+04:00  [INF] Hosting environment: "Development" (c3307c92)
+2025-04-06T17:22:22.7181644+04:00  [INF] Content root path: "C:\Users\laptop\source\repos\ModulesMonitor\Receiver\" (b5d60022)
+2025-04-06T17:22:23.1394154+04:00 0HNBL1O8C3P17:00000001 [INF] Request starting HTTP/2 GET https://localhost:52608/ - - (ca22a1cb)
+2025-04-06T17:22:23.2758248+04:00 0HNBL1O8C3P17:00000001 [INF] Request finished HTTP/2 GET https://localhost:52608/ - - - 404 0 - 139.1668ms (791a596a)
+2025-04-06T17:22:27.5229428+04:00  [ERR] It is not allowed to connect with a server after the connection is established. (bb085491)
+2025-04-06T17:22:27.5261968+04:00  [ERR] [null] (12807b18)
+2025-04-06T17:22:27.5368959+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:22:28.8091401+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:22:29.9104731+04:00  [INF] Executed DbCommand ("72"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:23:12.6334808+04:00  [INF] Connecting to the server (1fb09abe)
+2025-04-06T17:23:12.8256199+04:00  [INF] Connected succesfully (587d74a0)
+2025-04-06T17:23:12.8298337+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:23:13.0296038+04:00  [INF] Now listening on: "https://localhost:52608" (d826f4b8)
+2025-04-06T17:23:13.0319709+04:00  [INF] Now listening on: "http://localhost:52609" (d826f4b8)
+2025-04-06T17:23:13.0843813+04:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2025-04-06T17:23:13.0874707+04:00  [INF] Hosting environment: "Development" (c3307c92)
+2025-04-06T17:23:13.0897553+04:00  [INF] Content root path: "C:\Users\laptop\source\repos\ModulesMonitor\Receiver\" (b5d60022)
+2025-04-06T17:23:13.7022971+04:00 0HNBL1ONDD88L:00000001 [INF] Request starting HTTP/2 GET https://localhost:52608/ - - (ca22a1cb)
+2025-04-06T17:23:13.8473183+04:00 0HNBL1ONDD88L:00000001 [INF] Request finished HTTP/2 GET https://localhost:52608/ - - - 404 0 - 148.1053ms (791a596a)
+2025-04-06T17:23:14.1719903+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:23:15.1901686+04:00  [INF] Executed DbCommand ("84"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:23:25.3432991+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:23:25.5603509+04:00  [INF] Executed DbCommand ("56"ms) [Parameters=["@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?', @p3='?' (DbType = DateTime), @p4='?' (DbType = Int32), @p5='?', @p6='?' (DbType = DateTime), @p7='?' (DbType = Int32), @p8='?', @p9='?' (DbType = DateTime), @p10='?' (DbType = Int32), @p11='?', @p12='?' (DbType = DateTime), @p13='?' (DbType = Int32), @p14='?', @p15='?' (DbType = DateTime), @p16='?' (DbType = Int32), @p17='?', @p18='?' (DbType = DateTime), @p19='?' (DbType = Int32), @p20='?', @p21='?' (DbType = DateTime), @p22='?' (DbType = Int32), @p23='?', @p24='?' (DbType = DateTime), @p25='?' (DbType = Int32), @p26='?', @p27='?' (DbType = DateTime), @p28='?' (DbType = Int32), @p29='?'"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p0, @p1, @p2)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p3, @p4, @p5)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p6, @p7, @p8)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p9, @p10, @p11)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p12, @p13, @p14)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p15, @p16, @p17)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p18, @p19, @p20)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p21, @p22, @p23)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p24, @p25, @p26)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p27, @p28, @p29)
+RETURNING \"Id\";" (0723d8ff)
+2025-04-06T17:23:25.6410459+04:00  [INF] Context saved successfully
+Count of new records: 10 (99fa0407)
+2025-04-06T17:23:25.6476419+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:23:25.6591031+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:23:25.6746562+04:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:23:35.6904932+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:23:35.6933917+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?', @p3='?' (DbType = DateTime), @p4='?' (DbType = Int32), @p5='?', @p6='?' (DbType = DateTime), @p7='?' (DbType = Int32), @p8='?', @p9='?' (DbType = DateTime), @p10='?' (DbType = Int32), @p11='?', @p12='?' (DbType = DateTime), @p13='?' (DbType = Int32), @p14='?', @p15='?' (DbType = DateTime), @p16='?' (DbType = Int32), @p17='?', @p18='?' (DbType = DateTime), @p19='?' (DbType = Int32), @p20='?', @p21='?' (DbType = DateTime), @p22='?' (DbType = Int32), @p23='?', @p24='?' (DbType = DateTime), @p25='?' (DbType = Int32), @p26='?', @p27='?' (DbType = DateTime), @p28='?' (DbType = Int32), @p29='?'"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p0, @p1, @p2)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p3, @p4, @p5)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p6, @p7, @p8)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p9, @p10, @p11)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p12, @p13, @p14)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p15, @p16, @p17)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p18, @p19, @p20)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p21, @p22, @p23)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p24, @p25, @p26)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p27, @p28, @p29)
+RETURNING \"Id\";" (0723d8ff)
+2025-04-06T17:23:35.6967341+04:00  [INF] Context saved successfully
+Count of new records: 10 (99fa0407)
+2025-04-06T17:23:35.6992662+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:23:35.7477193+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:23:35.7500818+04:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:23:45.7638917+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:23:45.7666580+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?', @p3='?' (DbType = DateTime), @p4='?' (DbType = Int32), @p5='?', @p6='?' (DbType = DateTime), @p7='?' (DbType = Int32), @p8='?', @p9='?' (DbType = DateTime), @p10='?' (DbType = Int32), @p11='?', @p12='?' (DbType = DateTime), @p13='?' (DbType = Int32), @p14='?', @p15='?' (DbType = DateTime), @p16='?' (DbType = Int32), @p17='?', @p18='?' (DbType = DateTime), @p19='?' (DbType = Int32), @p20='?', @p21='?' (DbType = DateTime), @p22='?' (DbType = Int32), @p23='?', @p24='?' (DbType = DateTime), @p25='?' (DbType = Int32), @p26='?', @p27='?' (DbType = DateTime), @p28='?' (DbType = Int32), @p29='?'"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p0, @p1, @p2)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p3, @p4, @p5)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p6, @p7, @p8)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p9, @p10, @p11)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p12, @p13, @p14)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p15, @p16, @p17)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p18, @p19, @p20)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p21, @p22, @p23)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p24, @p25, @p26)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p27, @p28, @p29)
+RETURNING \"Id\";" (0723d8ff)
+2025-04-06T17:23:45.7875412+04:00  [INF] Context saved successfully
+Count of new records: 10 (99fa0407)
+2025-04-06T17:23:45.7891474+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:23:45.7909641+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:23:45.7922856+04:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:23:55.8024457+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:23:55.8050078+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?', @p3='?' (DbType = DateTime), @p4='?' (DbType = Int32), @p5='?', @p6='?' (DbType = DateTime), @p7='?' (DbType = Int32), @p8='?', @p9='?' (DbType = DateTime), @p10='?' (DbType = Int32), @p11='?', @p12='?' (DbType = DateTime), @p13='?' (DbType = Int32), @p14='?', @p15='?' (DbType = DateTime), @p16='?' (DbType = Int32), @p17='?', @p18='?' (DbType = DateTime), @p19='?' (DbType = Int32), @p20='?', @p21='?' (DbType = DateTime), @p22='?' (DbType = Int32), @p23='?', @p24='?' (DbType = DateTime), @p25='?' (DbType = Int32), @p26='?', @p27='?' (DbType = DateTime), @p28='?' (DbType = Int32), @p29='?'"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p0, @p1, @p2)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p3, @p4, @p5)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p6, @p7, @p8)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p9, @p10, @p11)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p12, @p13, @p14)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p15, @p16, @p17)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p18, @p19, @p20)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p21, @p22, @p23)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p24, @p25, @p26)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p27, @p28, @p29)
+RETURNING \"Id\";" (0723d8ff)
+2025-04-06T17:23:55.8256680+04:00  [INF] Context saved successfully
+Count of new records: 10 (99fa0407)
+2025-04-06T17:23:55.8274121+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:23:55.8295897+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:23:55.8313149+04:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:26:25.8100406+04:00  [INF] Connecting to the server (1fb09abe)
+2025-04-06T17:26:26.0137042+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:26:26.0207906+04:00  [INF] Connected succesfully (587d74a0)
+2025-04-06T17:26:26.2659095+04:00  [INF] Now listening on: "https://localhost:52608" (d826f4b8)
+2025-04-06T17:26:26.2683639+04:00  [INF] Now listening on: "http://localhost:52609" (d826f4b8)
+2025-04-06T17:26:26.3330158+04:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2025-04-06T17:26:26.3367206+04:00  [INF] Hosting environment: "Development" (c3307c92)
+2025-04-06T17:26:26.3388096+04:00  [INF] Content root path: "C:\Users\laptop\source\repos\ModulesMonitor\Receiver\" (b5d60022)
+2025-04-06T17:26:26.7805315+04:00 0HNBL1QGVFTI5:00000001 [INF] Request starting HTTP/2 GET https://localhost:52608/ - - (ca22a1cb)
+2025-04-06T17:26:26.9213100+04:00 0HNBL1QGVFTI5:00000001 [INF] Request finished HTTP/2 GET https://localhost:52608/ - - - 404 0 - 144.1160ms (791a596a)
+2025-04-06T17:26:27.3977204+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:26:28.4338213+04:00  [INF] Executed DbCommand ("73"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:26:38.5986658+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:26:38.7897744+04:00  [INF] Executed DbCommand ("41"ms) [Parameters=["@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?', @p3='?' (DbType = DateTime), @p4='?' (DbType = Int32), @p5='?', @p6='?' (DbType = DateTime), @p7='?' (DbType = Int32), @p8='?', @p9='?' (DbType = DateTime), @p10='?' (DbType = Int32), @p11='?', @p12='?' (DbType = DateTime), @p13='?' (DbType = Int32), @p14='?', @p15='?' (DbType = DateTime), @p16='?' (DbType = Int32), @p17='?', @p18='?' (DbType = DateTime), @p19='?' (DbType = Int32), @p20='?', @p21='?' (DbType = DateTime), @p22='?' (DbType = Int32), @p23='?', @p24='?' (DbType = DateTime), @p25='?' (DbType = Int32), @p26='?', @p27='?' (DbType = DateTime), @p28='?' (DbType = Int32), @p29='?'"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p0, @p1, @p2)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p3, @p4, @p5)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p6, @p7, @p8)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p9, @p10, @p11)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p12, @p13, @p14)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p15, @p16, @p17)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p18, @p19, @p20)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p21, @p22, @p23)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p24, @p25, @p26)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p27, @p28, @p29)
+RETURNING \"Id\";" (0723d8ff)
+2025-04-06T17:26:38.8851553+04:00  [INF] Context saved successfully
+Count of new records: 10 (99fa0407)
+2025-04-06T17:26:38.8920202+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:26:38.8956515+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:26:38.9002280+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:26:48.9227231+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:26:48.9257624+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?', @p3='?' (DbType = DateTime), @p4='?' (DbType = Int32), @p5='?', @p6='?' (DbType = DateTime), @p7='?' (DbType = Int32), @p8='?', @p9='?' (DbType = DateTime), @p10='?' (DbType = Int32), @p11='?', @p12='?' (DbType = DateTime), @p13='?' (DbType = Int32), @p14='?', @p15='?' (DbType = DateTime), @p16='?' (DbType = Int32), @p17='?', @p18='?' (DbType = DateTime), @p19='?' (DbType = Int32), @p20='?', @p21='?' (DbType = DateTime), @p22='?' (DbType = Int32), @p23='?', @p24='?' (DbType = DateTime), @p25='?' (DbType = Int32), @p26='?', @p27='?' (DbType = DateTime), @p28='?' (DbType = Int32), @p29='?'"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p0, @p1, @p2)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p3, @p4, @p5)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p6, @p7, @p8)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p9, @p10, @p11)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p12, @p13, @p14)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p15, @p16, @p17)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p18, @p19, @p20)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p21, @p22, @p23)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p24, @p25, @p26)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p27, @p28, @p29)
+RETURNING \"Id\";" (0723d8ff)
+2025-04-06T17:26:48.9483766+04:00  [INF] Context saved successfully
+Count of new records: 10 (99fa0407)
+2025-04-06T17:26:48.9514775+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:26:48.9998183+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:26:49.0100922+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:26:59.0275692+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:26:59.0303111+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?', @p3='?' (DbType = DateTime), @p4='?' (DbType = Int32), @p5='?', @p6='?' (DbType = DateTime), @p7='?' (DbType = Int32), @p8='?', @p9='?' (DbType = DateTime), @p10='?' (DbType = Int32), @p11='?', @p12='?' (DbType = DateTime), @p13='?' (DbType = Int32), @p14='?', @p15='?' (DbType = DateTime), @p16='?' (DbType = Int32), @p17='?', @p18='?' (DbType = DateTime), @p19='?' (DbType = Int32), @p20='?', @p21='?' (DbType = DateTime), @p22='?' (DbType = Int32), @p23='?', @p24='?' (DbType = DateTime), @p25='?' (DbType = Int32), @p26='?', @p27='?' (DbType = DateTime), @p28='?' (DbType = Int32), @p29='?'"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p0, @p1, @p2)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p3, @p4, @p5)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p6, @p7, @p8)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p9, @p10, @p11)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p12, @p13, @p14)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p15, @p16, @p17)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p18, @p19, @p20)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p21, @p22, @p23)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p24, @p25, @p26)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p27, @p28, @p29)
+RETURNING \"Id\";" (0723d8ff)
+2025-04-06T17:26:59.0333633+04:00  [INF] Context saved successfully
+Count of new records: 10 (99fa0407)
+2025-04-06T17:26:59.0358149+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:26:59.0386173+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:26:59.0409623+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:27:09.0496122+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:27:09.0538026+04:00  [INF] Executed DbCommand ("3"ms) [Parameters=["@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?', @p3='?' (DbType = DateTime), @p4='?' (DbType = Int32), @p5='?', @p6='?' (DbType = DateTime), @p7='?' (DbType = Int32), @p8='?', @p9='?' (DbType = DateTime), @p10='?' (DbType = Int32), @p11='?', @p12='?' (DbType = DateTime), @p13='?' (DbType = Int32), @p14='?', @p15='?' (DbType = DateTime), @p16='?' (DbType = Int32), @p17='?', @p18='?' (DbType = DateTime), @p19='?' (DbType = Int32), @p20='?', @p21='?' (DbType = DateTime), @p22='?' (DbType = Int32), @p23='?', @p24='?' (DbType = DateTime), @p25='?' (DbType = Int32), @p26='?', @p27='?' (DbType = DateTime), @p28='?' (DbType = Int32), @p29='?'"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p0, @p1, @p2)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p3, @p4, @p5)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p6, @p7, @p8)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p9, @p10, @p11)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p12, @p13, @p14)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p15, @p16, @p17)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p18, @p19, @p20)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p21, @p22, @p23)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p24, @p25, @p26)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p27, @p28, @p29)
+RETURNING \"Id\";" (0723d8ff)
+2025-04-06T17:27:09.0581514+04:00  [INF] Context saved successfully
+Count of new records: 10 (99fa0407)
+2025-04-06T17:27:09.0620366+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:27:09.0660607+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:27:09.0686587+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:27:19.0856421+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:27:19.0891771+04:00  [INF] Executed DbCommand ("3"ms) [Parameters=["@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?', @p3='?' (DbType = DateTime), @p4='?' (DbType = Int32), @p5='?', @p6='?' (DbType = DateTime), @p7='?' (DbType = Int32), @p8='?', @p9='?' (DbType = DateTime), @p10='?' (DbType = Int32), @p11='?', @p12='?' (DbType = DateTime), @p13='?' (DbType = Int32), @p14='?', @p15='?' (DbType = DateTime), @p16='?' (DbType = Int32), @p17='?', @p18='?' (DbType = DateTime), @p19='?' (DbType = Int32), @p20='?', @p21='?' (DbType = DateTime), @p22='?' (DbType = Int32), @p23='?', @p24='?' (DbType = DateTime), @p25='?' (DbType = Int32), @p26='?', @p27='?' (DbType = DateTime), @p28='?' (DbType = Int32), @p29='?'"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p0, @p1, @p2)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p3, @p4, @p5)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p6, @p7, @p8)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p9, @p10, @p11)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p12, @p13, @p14)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p15, @p16, @p17)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p18, @p19, @p20)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p21, @p22, @p23)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p24, @p25, @p26)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p27, @p28, @p29)
+RETURNING \"Id\";" (0723d8ff)
+2025-04-06T17:27:19.0947800+04:00  [INF] Context saved successfully
+Count of new records: 10 (99fa0407)
+2025-04-06T17:27:19.0984221+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:27:19.1015193+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:27:19.1040084+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:27:29.1220865+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:27:29.1262689+04:00  [INF] Executed DbCommand ("3"ms) [Parameters=["@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?', @p3='?' (DbType = DateTime), @p4='?' (DbType = Int32), @p5='?', @p6='?' (DbType = DateTime), @p7='?' (DbType = Int32), @p8='?', @p9='?' (DbType = DateTime), @p10='?' (DbType = Int32), @p11='?', @p12='?' (DbType = DateTime), @p13='?' (DbType = Int32), @p14='?', @p15='?' (DbType = DateTime), @p16='?' (DbType = Int32), @p17='?', @p18='?' (DbType = DateTime), @p19='?' (DbType = Int32), @p20='?', @p21='?' (DbType = DateTime), @p22='?' (DbType = Int32), @p23='?', @p24='?' (DbType = DateTime), @p25='?' (DbType = Int32), @p26='?', @p27='?' (DbType = DateTime), @p28='?' (DbType = Int32), @p29='?'"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p0, @p1, @p2)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p3, @p4, @p5)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p6, @p7, @p8)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p9, @p10, @p11)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p12, @p13, @p14)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p15, @p16, @p17)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p18, @p19, @p20)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p21, @p22, @p23)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p24, @p25, @p26)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p27, @p28, @p29)
+RETURNING \"Id\";" (0723d8ff)
+2025-04-06T17:27:29.1316476+04:00  [INF] Context saved successfully
+Count of new records: 10 (99fa0407)
+2025-04-06T17:27:29.1354830+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:27:29.1394322+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:27:29.1418983+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:27:39.1616813+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:27:39.1661772+04:00  [INF] Executed DbCommand ("4"ms) [Parameters=["@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?', @p3='?' (DbType = DateTime), @p4='?' (DbType = Int32), @p5='?', @p6='?' (DbType = DateTime), @p7='?' (DbType = Int32), @p8='?', @p9='?' (DbType = DateTime), @p10='?' (DbType = Int32), @p11='?', @p12='?' (DbType = DateTime), @p13='?' (DbType = Int32), @p14='?', @p15='?' (DbType = DateTime), @p16='?' (DbType = Int32), @p17='?', @p18='?' (DbType = DateTime), @p19='?' (DbType = Int32), @p20='?', @p21='?' (DbType = DateTime), @p22='?' (DbType = Int32), @p23='?', @p24='?' (DbType = DateTime), @p25='?' (DbType = Int32), @p26='?', @p27='?' (DbType = DateTime), @p28='?' (DbType = Int32), @p29='?'"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p0, @p1, @p2)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p3, @p4, @p5)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p6, @p7, @p8)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p9, @p10, @p11)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p12, @p13, @p14)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p15, @p16, @p17)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p18, @p19, @p20)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p21, @p22, @p23)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p24, @p25, @p26)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p27, @p28, @p29)
+RETURNING \"Id\";" (0723d8ff)
+2025-04-06T17:27:39.1716545+04:00  [INF] Context saved successfully
+Count of new records: 10 (99fa0407)
+2025-04-06T17:27:39.1753419+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:27:39.1804386+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:27:39.1830272+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:27:49.1921673+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:27:49.1957381+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?', @p3='?' (DbType = DateTime), @p4='?' (DbType = Int32), @p5='?', @p6='?' (DbType = DateTime), @p7='?' (DbType = Int32), @p8='?', @p9='?' (DbType = DateTime), @p10='?' (DbType = Int32), @p11='?', @p12='?' (DbType = DateTime), @p13='?' (DbType = Int32), @p14='?', @p15='?' (DbType = DateTime), @p16='?' (DbType = Int32), @p17='?', @p18='?' (DbType = DateTime), @p19='?' (DbType = Int32), @p20='?', @p21='?' (DbType = DateTime), @p22='?' (DbType = Int32), @p23='?', @p24='?' (DbType = DateTime), @p25='?' (DbType = Int32), @p26='?'"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p0, @p1, @p2)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p3, @p4, @p5)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p6, @p7, @p8)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p9, @p10, @p11)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p12, @p13, @p14)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p15, @p16, @p17)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p18, @p19, @p20)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p21, @p22, @p23)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p24, @p25, @p26)
+RETURNING \"Id\";" (0723d8ff)
+2025-04-06T17:27:49.2000086+04:00  [INF] Context saved successfully
+Count of new records: 9 (16a0a623)
+2025-04-06T17:27:49.2030486+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:27:49.2070663+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:27:49.2094994+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:27:59.2251220+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:27:59.2276347+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?', @p3='?' (DbType = DateTime), @p4='?' (DbType = Int32), @p5='?', @p6='?' (DbType = DateTime), @p7='?' (DbType = Int32), @p8='?', @p9='?' (DbType = DateTime), @p10='?' (DbType = Int32), @p11='?', @p12='?' (DbType = DateTime), @p13='?' (DbType = Int32), @p14='?', @p15='?' (DbType = DateTime), @p16='?' (DbType = Int32), @p17='?', @p18='?' (DbType = DateTime), @p19='?' (DbType = Int32), @p20='?', @p21='?' (DbType = DateTime), @p22='?' (DbType = Int32), @p23='?', @p24='?' (DbType = DateTime), @p25='?' (DbType = Int32), @p26='?', @p27='?' (DbType = DateTime), @p28='?' (DbType = Int32), @p29='?'"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p0, @p1, @p2)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p3, @p4, @p5)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p6, @p7, @p8)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p9, @p10, @p11)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p12, @p13, @p14)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p15, @p16, @p17)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p18, @p19, @p20)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p21, @p22, @p23)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p24, @p25, @p26)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p27, @p28, @p29)
+RETURNING \"Id\";" (0723d8ff)
+2025-04-06T17:27:59.2310837+04:00  [INF] Context saved successfully
+Count of new records: 10 (99fa0407)
+2025-04-06T17:27:59.2329584+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:27:59.2350503+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:27:59.2364263+04:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:28:09.2484643+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:28:09.2524269+04:00  [INF] Executed DbCommand ("3"ms) [Parameters=["@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?', @p3='?' (DbType = DateTime), @p4='?' (DbType = Int32), @p5='?', @p6='?' (DbType = DateTime), @p7='?' (DbType = Int32), @p8='?', @p9='?' (DbType = DateTime), @p10='?' (DbType = Int32), @p11='?', @p12='?' (DbType = DateTime), @p13='?' (DbType = Int32), @p14='?', @p15='?' (DbType = DateTime), @p16='?' (DbType = Int32), @p17='?', @p18='?' (DbType = DateTime), @p19='?' (DbType = Int32), @p20='?', @p21='?' (DbType = DateTime), @p22='?' (DbType = Int32), @p23='?', @p24='?' (DbType = DateTime), @p25='?' (DbType = Int32), @p26='?', @p27='?' (DbType = DateTime), @p28='?' (DbType = Int32), @p29='?'"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p0, @p1, @p2)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p3, @p4, @p5)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p6, @p7, @p8)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p9, @p10, @p11)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p12, @p13, @p14)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p15, @p16, @p17)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p18, @p19, @p20)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p21, @p22, @p23)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p24, @p25, @p26)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p27, @p28, @p29)
+RETURNING \"Id\";" (0723d8ff)
+2025-04-06T17:28:09.2572636+04:00  [INF] Context saved successfully
+Count of new records: 10 (99fa0407)
+2025-04-06T17:28:09.2599743+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:28:09.2640571+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:28:09.2659026+04:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:28:19.2740193+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:28:19.2764472+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?', @p3='?' (DbType = DateTime), @p4='?' (DbType = Int32), @p5='?', @p6='?' (DbType = DateTime), @p7='?' (DbType = Int32), @p8='?', @p9='?' (DbType = DateTime), @p10='?' (DbType = Int32), @p11='?', @p12='?' (DbType = DateTime), @p13='?' (DbType = Int32), @p14='?', @p15='?' (DbType = DateTime), @p16='?' (DbType = Int32), @p17='?', @p18='?' (DbType = DateTime), @p19='?' (DbType = Int32), @p20='?', @p21='?' (DbType = DateTime), @p22='?' (DbType = Int32), @p23='?', @p24='?' (DbType = DateTime), @p25='?' (DbType = Int32), @p26='?', @p27='?' (DbType = DateTime), @p28='?' (DbType = Int32), @p29='?'"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p0, @p1, @p2)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p3, @p4, @p5)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p6, @p7, @p8)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p9, @p10, @p11)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p12, @p13, @p14)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p15, @p16, @p17)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p18, @p19, @p20)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p21, @p22, @p23)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p24, @p25, @p26)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p27, @p28, @p29)
+RETURNING \"Id\";" (0723d8ff)
+2025-04-06T17:28:19.2811183+04:00  [INF] Context saved successfully
+Count of new records: 10 (99fa0407)
+2025-04-06T17:28:19.2829861+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:28:19.2850587+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:28:19.2864706+04:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:28:29.2992325+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:28:29.3025624+04:00  [INF] Executed DbCommand ("3"ms) [Parameters=["@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?', @p3='?' (DbType = DateTime), @p4='?' (DbType = Int32), @p5='?', @p6='?' (DbType = DateTime), @p7='?' (DbType = Int32), @p8='?', @p9='?' (DbType = DateTime), @p10='?' (DbType = Int32), @p11='?', @p12='?' (DbType = DateTime), @p13='?' (DbType = Int32), @p14='?', @p15='?' (DbType = DateTime), @p16='?' (DbType = Int32), @p17='?', @p18='?' (DbType = DateTime), @p19='?' (DbType = Int32), @p20='?', @p21='?' (DbType = DateTime), @p22='?' (DbType = Int32), @p23='?', @p24='?' (DbType = DateTime), @p25='?' (DbType = Int32), @p26='?', @p27='?' (DbType = DateTime), @p28='?' (DbType = Int32), @p29='?'"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p0, @p1, @p2)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p3, @p4, @p5)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p6, @p7, @p8)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p9, @p10, @p11)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p12, @p13, @p14)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p15, @p16, @p17)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p18, @p19, @p20)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p21, @p22, @p23)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p24, @p25, @p26)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p27, @p28, @p29)
+RETURNING \"Id\";" (0723d8ff)
+2025-04-06T17:28:29.3066055+04:00  [INF] Context saved successfully
+Count of new records: 10 (99fa0407)
+2025-04-06T17:28:29.3088879+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:28:29.3111273+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:28:29.3128763+04:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:28:39.3275585+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:28:39.3302982+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?', @p3='?' (DbType = DateTime), @p4='?' (DbType = Int32), @p5='?', @p6='?' (DbType = DateTime), @p7='?' (DbType = Int32), @p8='?', @p9='?' (DbType = DateTime), @p10='?' (DbType = Int32), @p11='?', @p12='?' (DbType = DateTime), @p13='?' (DbType = Int32), @p14='?', @p15='?' (DbType = DateTime), @p16='?' (DbType = Int32), @p17='?', @p18='?' (DbType = DateTime), @p19='?' (DbType = Int32), @p20='?', @p21='?' (DbType = DateTime), @p22='?' (DbType = Int32), @p23='?', @p24='?' (DbType = DateTime), @p25='?' (DbType = Int32), @p26='?', @p27='?' (DbType = DateTime), @p28='?' (DbType = Int32), @p29='?'"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p0, @p1, @p2)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p3, @p4, @p5)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p6, @p7, @p8)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p9, @p10, @p11)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p12, @p13, @p14)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p15, @p16, @p17)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p18, @p19, @p20)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p21, @p22, @p23)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p24, @p25, @p26)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p27, @p28, @p29)
+RETURNING \"Id\";" (0723d8ff)
+2025-04-06T17:28:39.3328663+04:00  [INF] Context saved successfully
+Count of new records: 10 (99fa0407)
+2025-04-06T17:28:39.3345933+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:28:39.3372489+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:28:39.3386389+04:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:28:49.3442339+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:28:49.3471765+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?', @p3='?' (DbType = DateTime), @p4='?' (DbType = Int32), @p5='?', @p6='?' (DbType = DateTime), @p7='?' (DbType = Int32), @p8='?', @p9='?' (DbType = DateTime), @p10='?' (DbType = Int32), @p11='?', @p12='?' (DbType = DateTime), @p13='?' (DbType = Int32), @p14='?', @p15='?' (DbType = DateTime), @p16='?' (DbType = Int32), @p17='?', @p18='?' (DbType = DateTime), @p19='?' (DbType = Int32), @p20='?', @p21='?' (DbType = DateTime), @p22='?' (DbType = Int32), @p23='?', @p24='?' (DbType = DateTime), @p25='?' (DbType = Int32), @p26='?', @p27='?' (DbType = DateTime), @p28='?' (DbType = Int32), @p29='?'"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p0, @p1, @p2)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p3, @p4, @p5)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p6, @p7, @p8)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p9, @p10, @p11)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p12, @p13, @p14)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p15, @p16, @p17)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p18, @p19, @p20)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p21, @p22, @p23)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p24, @p25, @p26)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p27, @p28, @p29)
+RETURNING \"Id\";" (0723d8ff)
+2025-04-06T17:28:49.3685740+04:00  [INF] Context saved successfully
+Count of new records: 10 (99fa0407)
+2025-04-06T17:28:49.3708274+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:28:49.3735451+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:28:49.3752614+04:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:28:59.3801638+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:28:59.3832269+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?', @p3='?' (DbType = DateTime), @p4='?' (DbType = Int32), @p5='?', @p6='?' (DbType = DateTime), @p7='?' (DbType = Int32), @p8='?', @p9='?' (DbType = DateTime), @p10='?' (DbType = Int32), @p11='?', @p12='?' (DbType = DateTime), @p13='?' (DbType = Int32), @p14='?', @p15='?' (DbType = DateTime), @p16='?' (DbType = Int32), @p17='?', @p18='?' (DbType = DateTime), @p19='?' (DbType = Int32), @p20='?', @p21='?' (DbType = DateTime), @p22='?' (DbType = Int32), @p23='?', @p24='?' (DbType = DateTime), @p25='?' (DbType = Int32), @p26='?', @p27='?' (DbType = DateTime), @p28='?' (DbType = Int32), @p29='?'"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p0, @p1, @p2)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p3, @p4, @p5)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p6, @p7, @p8)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p9, @p10, @p11)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p12, @p13, @p14)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p15, @p16, @p17)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p18, @p19, @p20)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p21, @p22, @p23)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p24, @p25, @p26)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p27, @p28, @p29)
+RETURNING \"Id\";" (0723d8ff)
+2025-04-06T17:28:59.3989935+04:00  [INF] Context saved successfully
+Count of new records: 10 (99fa0407)
+2025-04-06T17:28:59.4011017+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:28:59.4033861+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:28:59.4050184+04:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:29:09.4342929+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:29:09.4369948+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?', @p3='?' (DbType = DateTime), @p4='?' (DbType = Int32), @p5='?', @p6='?' (DbType = DateTime), @p7='?' (DbType = Int32), @p8='?', @p9='?' (DbType = DateTime), @p10='?' (DbType = Int32), @p11='?', @p12='?' (DbType = DateTime), @p13='?' (DbType = Int32), @p14='?', @p15='?' (DbType = DateTime), @p16='?' (DbType = Int32), @p17='?', @p18='?' (DbType = DateTime), @p19='?' (DbType = Int32), @p20='?', @p21='?' (DbType = DateTime), @p22='?' (DbType = Int32), @p23='?', @p24='?' (DbType = DateTime), @p25='?' (DbType = Int32), @p26='?', @p27='?' (DbType = DateTime), @p28='?' (DbType = Int32), @p29='?'"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p0, @p1, @p2)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p3, @p4, @p5)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p6, @p7, @p8)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p9, @p10, @p11)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p12, @p13, @p14)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p15, @p16, @p17)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p18, @p19, @p20)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p21, @p22, @p23)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p24, @p25, @p26)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p27, @p28, @p29)
+RETURNING \"Id\";" (0723d8ff)
+2025-04-06T17:29:09.4402273+04:00  [INF] Context saved successfully
+Count of new records: 10 (99fa0407)
+2025-04-06T17:29:09.4426931+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:29:09.4453902+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:29:09.4474929+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:29:19.4555109+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:29:19.4587383+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?', @p3='?' (DbType = DateTime), @p4='?' (DbType = Int32), @p5='?', @p6='?' (DbType = DateTime), @p7='?' (DbType = Int32), @p8='?', @p9='?' (DbType = DateTime), @p10='?' (DbType = Int32), @p11='?', @p12='?' (DbType = DateTime), @p13='?' (DbType = Int32), @p14='?', @p15='?' (DbType = DateTime), @p16='?' (DbType = Int32), @p17='?', @p18='?' (DbType = DateTime), @p19='?' (DbType = Int32), @p20='?', @p21='?' (DbType = DateTime), @p22='?' (DbType = Int32), @p23='?', @p24='?' (DbType = DateTime), @p25='?' (DbType = Int32), @p26='?', @p27='?' (DbType = DateTime), @p28='?' (DbType = Int32), @p29='?'"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p0, @p1, @p2)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p3, @p4, @p5)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p6, @p7, @p8)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p9, @p10, @p11)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p12, @p13, @p14)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p15, @p16, @p17)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p18, @p19, @p20)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p21, @p22, @p23)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p24, @p25, @p26)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p27, @p28, @p29)
+RETURNING \"Id\";" (0723d8ff)
+2025-04-06T17:29:19.4783571+04:00  [INF] Context saved successfully
+Count of new records: 10 (99fa0407)
+2025-04-06T17:29:19.4813560+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:29:19.4848678+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:29:19.4947156+04:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:29:28.6657083+04:00  [INF] Connecting to the server (1fb09abe)
+2025-04-06T17:29:28.8373369+04:00  [INF] Connected succesfully (587d74a0)
+2025-04-06T17:29:28.8455115+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:29:29.0381286+04:00  [INF] Now listening on: "https://localhost:52608" (d826f4b8)
+2025-04-06T17:29:29.0400152+04:00  [INF] Now listening on: "http://localhost:52609" (d826f4b8)
+2025-04-06T17:29:29.0839195+04:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2025-04-06T17:29:29.0867086+04:00  [INF] Hosting environment: "Development" (c3307c92)
+2025-04-06T17:29:29.0882668+04:00  [INF] Content root path: "C:\Users\laptop\source\repos\ModulesMonitor\Receiver\" (b5d60022)
+2025-04-06T17:29:29.6087800+04:00 0HNBL1S7EE1K2:00000001 [INF] Request starting HTTP/2 GET https://localhost:52608/ - - (ca22a1cb)
+2025-04-06T17:29:29.7660641+04:00 0HNBL1S7EE1K2:00000001 [INF] Request finished HTTP/2 GET https://localhost:52608/ - - - 404 0 - 161.1847ms (791a596a)
+2025-04-06T17:29:30.2892818+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:29:31.3836212+04:00  [INF] Executed DbCommand ("76"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:29:41.5442399+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:29:41.7169552+04:00  [INF] Executed DbCommand ("32"ms) [Parameters=["@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?', @p3='?' (DbType = DateTime), @p4='?' (DbType = Int32), @p5='?', @p6='?' (DbType = DateTime), @p7='?' (DbType = Int32), @p8='?', @p9='?' (DbType = DateTime), @p10='?' (DbType = Int32), @p11='?', @p12='?' (DbType = DateTime), @p13='?' (DbType = Int32), @p14='?', @p15='?' (DbType = DateTime), @p16='?' (DbType = Int32), @p17='?', @p18='?' (DbType = DateTime), @p19='?' (DbType = Int32), @p20='?', @p21='?' (DbType = DateTime), @p22='?' (DbType = Int32), @p23='?', @p24='?' (DbType = DateTime), @p25='?' (DbType = Int32), @p26='?'"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p0, @p1, @p2)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p3, @p4, @p5)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p6, @p7, @p8)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p9, @p10, @p11)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p12, @p13, @p14)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p15, @p16, @p17)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p18, @p19, @p20)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p21, @p22, @p23)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p24, @p25, @p26)
+RETURNING \"Id\";" (0723d8ff)
+2025-04-06T17:29:41.8033591+04:00  [INF] Context saved successfully
+Count of new records: 9 (16a0a623)
+2025-04-06T17:29:41.8093086+04:00  [INF] Loading modules... (7ec53c6b)
+2025-04-06T17:29:41.8160480+04:00  [INF] Entity Framework Core "6.0.36" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39"' with options: "None" (d2805559)
+2025-04-06T17:29:41.8238924+04:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT m.\"Id\", m.\"CreatedAt\", m.\"Description\", m.\"MqttTopic\", m.\"Name\", s.\"Id\", s.\"DecimalPlaces\", s.\"MeasuringUnitName\", s.\"ModuleId\", s.\"PositionIndex\"
+FROM \"Modules\" AS m
+LEFT JOIN \"Sensors\" AS s ON m.\"Id\" = s.\"ModuleId\"
+ORDER BY m.\"Id\"" (0723d8ff)
+2025-04-06T17:29:45.0405514+04:00  [INF] Disconnecting from the server (ef9c9c5f)
+2025-04-06T17:29:45.0606428+04:00  [INF] Saving recorded messages (e02fe1be)
+2025-04-06T17:29:45.0623997+04:00  [INF] Disconnected from mosquitto (b25b841d)
+2025-04-06T17:29:45.0642914+04:00  [INF] Shutting down receiver... (6790ede4)
+2025-04-06T17:29:45.0663195+04:00  [INF] Executed DbCommand ("1"ms) [Parameters=["@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?', @p3='?' (DbType = DateTime), @p4='?' (DbType = Int32), @p5='?', @p6='?' (DbType = DateTime), @p7='?' (DbType = Int32), @p8='?'"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p0, @p1, @p2)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p3, @p4, @p5)
+RETURNING \"Id\";
+INSERT INTO \"SensorValues\" (\"ReadingDateTime\", \"SensorId\", \"Value\")
+VALUES (@p6, @p7, @p8)
+RETURNING \"Id\";" (0723d8ff)
+2025-04-06T17:29:45.0699863+04:00  [INF] Context saved successfully
+Count of new records: 3 (8df19493)

@@ -1,0 +1,17 @@
+.title {
+  display: flex;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  background-color: white;
+  border-bottom: black 1px solid;
+  h2 {
+    height: 64px;
+    overflow: hidden;
+    margin-bottom: 0;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+}

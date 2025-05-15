@@ -1,0 +1,23 @@
+$primary-color: #1d5eab;
+$dark-primary-color: #00235D;
+$accent-color: #dee9f6;
+$selected-color: #8091AE;
+$warning-color: #931414;
+$dark-gray: #585858;
+$gray: #F2F2F2;
+
+// Light Theme Text
+$dark-text: #000000;
+$dark-primary-text: rgba($dark-text, 0.87);
+$dark-accent-text: rgba($dark-primary-text, 0.54);
+$dark-disabled-text: rgba($dark-primary-text, 0.38);
+$dark-dividers: rgba($dark-primary-text, 0.12);
+$dark-focused: rgba($dark-primary-text, 0.12);
+
+.primary-color {
+    color: $primary-color !important;
+}
+
+.dark-primary-color {
+    color: $dark-primary-color !important;
+}

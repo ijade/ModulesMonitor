@@ -1,0 +1,5 @@
+@startuml
+class BaseEntity {
+    + Id : int <<get>> <<set>>
+}
+@enduml

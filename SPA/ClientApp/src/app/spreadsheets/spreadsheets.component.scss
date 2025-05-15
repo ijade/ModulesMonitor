@@ -1,0 +1,40 @@
+@import '/src/palette.scss';
+@import '/src/styles/spreadsheet.scss';
+
+::ng-deep .adding-title {
+    text-align: center;
+}
+
+::ng-deep .cell-buttons {
+    display: inline-flex;
+}
+
+::ng-deep .order-by-header {
+    flex-direction: row-reverse;
+
+    button {
+        font-size: 14px;
+        font-weight: 400;
+        color: $dark-gray;
+    }
+}
+
+::ng-deep .order-by-menu-item {
+    mat-icon {
+        scale: 0.7;
+        -webkit-text-stroke-width: 1px;
+    }
+} 
+
+::ng-deep .borehole-modal-hat {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+::ng-deep .check-is-archive {
+    color: $primary-color
+}
+::ng-deep h4.mt-4{
+    font-weight: 700;
+}

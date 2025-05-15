@@ -1,0 +1,12 @@
+@startuml
+class ModuleController {
+    + ModuleController(service:ModuleService)
+    + <<async>> Get() : Task<ICollection<ModuleModel>>
+    + <<async>> GetPage(parameters:PagingParameters) : Task<PagedList<ModuleModel>>
+    + <<async>> GetById(id:long) : Task<ModuleModel>
+    + <<async>> Add(model:ModuleModel) : Task<ResultModel>
+    + <<async>> Update(model:ModuleModel) : Task<ResultModel>
+    + <<async>> Delete(id:long) : Task<ResultModel>
+}
+ControllerBase <|-- ModuleController
+@enduml

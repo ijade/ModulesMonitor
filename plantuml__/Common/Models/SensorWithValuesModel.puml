@@ -1,0 +1,12 @@
+@startuml
+class SensorWithValuesModel {
+    + Id : int <<get>> <<set>>
+    + PositionIndex : int <<get>> <<set>>
+    + DecimalPlaces : int <<get>> <<set>>
+    + MeasuringUnitName : string <<get>> <<set>>
+    + ModuleId : int <<get>> <<set>>
+}
+class "ICollection`1"<T> {
+}
+SensorWithValuesModel o-> "sensorValues<SensorValueModel>" "ICollection`1"
+@enduml

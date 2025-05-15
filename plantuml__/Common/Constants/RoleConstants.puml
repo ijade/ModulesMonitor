@@ -1,0 +1,9 @@
+@startuml
+class RoleConstants <<static>> {
+    + <<const>> Admin : string = "Admin"
+    + <<const>> AdminNormalized : string = "ADMIN"
+    + <<const>> User : string = "User"
+    + <<const>> UserNormalized : string = "USER"
+    + <<const>> All : string
+}
+@enduml

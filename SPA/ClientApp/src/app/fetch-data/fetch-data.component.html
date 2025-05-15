@@ -1,0 +1,35 @@
+<div id="graphsContainer" #graphsContainer>
+  <div class="graphs drag-list" >
+    <!-- TODO sorted by orderNum -->
+    <ng-container *ngFor="let userChart of userCharts; let i = index; let last = last">
+      <!-- [dateAxisIsShowing]="i%4 == 0" -->
+      <!-- add cdkDrag here -->
+      <app-graph
+        (onGraphDrawn)="onDataDrawn($event)"
+        (onGraphStretch)="onGraphStretch($event)"
+        [isScrollLocked]="isDynamicScrollLocked"
+        [userChart]="userChart"
+        [onOnline]="onOnline"
+        [onOffline]="onOffline"
+        [onUpdatedValues]="onUpdatedValues"
+        [onUpdatedDislpayValues]="onUpdatedDislpayValues"
+        [onMessageReceived]="onMessageReceived"
+        [onGraphRangeUpdated]="onGraphRangeUpdated"
+        [dateAxisIsShowing]="i == 0"
+        [dateTime]="dateTime"
+        [range]="range"
+        [timesScrolled]="timesScrolled"
+        [currentTimezone]="currentTimezone"
+        [isOnline]="isOnline"
+        [style.height]="graphHeight"
+        [last]="last"
+        [index]="i"
+        [countGraphs]="chartCount"
+        [ngStyle]="graphWidthStyles[i]"
+        class="graph drag-box"
+      ></app-graph>
+    </ng-container>
+  </div>
+
+  <div id="legend-container" class="legend-container-wrapper"></div>
+  </div>

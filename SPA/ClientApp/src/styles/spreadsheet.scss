@@ -1,0 +1,63 @@
+@import '/src/palette.scss';
+
+::ng-deep .mat-tab-header {
+    border-bottom: none !important;
+}
+
+::ng-deep .mat-tab-links {
+    border-bottom: 2px $gray solid;
+
+    .spreadsheets-tab {
+
+        color: $dark-primary-color;
+        opacity: 1;
+        font-weight: 400;
+
+        &.active {
+            color: $selected-color;
+            border: 2px $gray solid;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom: none;
+            box-shadow: 0 4px 2px -2px white;
+        }
+    }
+
+}
+
+::ng-deep .mat-tab-body-content {
+    padding: 1rem;
+}
+
+::ng-deep .mat-table {
+    .mat-header-row .mat-header-cell {
+        color: $dark-text;
+        user-select: none;
+        font-size: 14px;
+    }
+
+    .mat-row {
+        &:nth-child(even) {
+            background: $gray;
+        }
+
+        .mat-cell {
+            color: $dark-gray;
+
+            .cell-buttons {
+                width: 100%;
+                margin-right: 1.5rem;
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+    }
+}
+
+::ng-deep .spreadsheet {
+    padding: 1rem;
+
+    button {
+        font-size: 16px;
+    }
+}

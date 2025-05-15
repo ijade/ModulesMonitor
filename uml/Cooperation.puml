@@ -1,0 +1,60 @@
+@startuml Cooperation
+
+title Диаграмма кооперации системы мониторинга
+skinparam monochrome true
+skinparam nodesep 40
+
+
+skinparam linetype ortho
+
+top to bottom direction
+left to right direction
+
+' Секция 1: Пользовательский уровень
+actor "Пользователь" as user
+
+' Секция 2: Веб-интерфейс
+package "Веб-интерфейс (Angular)" as ui {
+  [Дашборд] as dashboard
+  [API Клиент\n] as api_client
+}
+
+' Секция 3: Бэкенд
+package "Бэкенд (ASP.NET Core)" as backend {
+  [REST API] as api
+  [MQTT Ресивер] as mqtt
+  [Обработчик данных] as processor
+}
+
+' Секция 4: Хранение данных
+database "PostgreSQL" as db
+queue "MQTT Брокер\n(Mosquitto)" as broker
+
+' Секция 5: Устройства
+node "Датчики IoT" as sensors
+
+' Основной поток запросов
+user -down-> dashboard : "1. Запрос истории"
+dashboard -down-> api_client : "2. Подготовка запроса"
+api_client -down-> api : "3. GET /api/sensors/{id}"
+api -down-> db : "4. SQL запрос"
+db -up-> api : "5. Результаты"
+api -up-> api_client : "6. JSON-ответ"
+api_client -up-> dashboard : "7. Визуализация"
+
+' Поток реального времени
+sensors -right-> broker : "8. PUBLISH (QoS=1)"
+broker -right-> mqtt : "9. Подписка"
+mqtt -down-> processor : "10. Обработка"
+processor -left-> db : "11. INSERT"
+processor -up-> api : "12. WebSocket"
+api -left-> dashboard : "\n\n13. Обновление\n"
+
+' Выравнивание элементов
+ui -[hidden]-> backend
+backend -[hidden]-> db
+db -[hidden]-> broker
+broker -[hidden]-> sensors
+api -[hidden]-> dashboard
+
+@enduml

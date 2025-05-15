@@ -1,5 +1,4 @@
 @startuml
-title Настройка датчика через дерево топиков MQTT
 actor Пользователь as User
 participant "Веб-интерфейс" as UI
 participant "Backend API" as API

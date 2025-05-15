@@ -238,6 +238,7 @@ namespace Receiver.Services
             catch (Exception e)
             {
                 _logger.LogError($"Error while recording message {e.Message}");
+                File.AppendAllText("DeadLetterQueue.txt", message); 
             }
         }
     }

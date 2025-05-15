@@ -1,9 +1,9 @@
 @startuml
-title **Диаграмма компонентов**
+'title **Диаграмма компонентов**
 
 
 skinparam dpi 150
-skinparam defaultFontSize 10
+skinparam defaultFontSize 22
 skinparam maxMessageSize 50
 skinparam wrapWidth 200
 skinparam componentStyle uml2

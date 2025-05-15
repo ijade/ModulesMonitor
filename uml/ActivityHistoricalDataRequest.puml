@@ -1,0 +1,54 @@
+@startuml ActivityHistoricalDataRequest
+
+'title Запрос исторических данных датчиков (Горизонтальные дорожки)
+
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam arrow {
+  Color #333333
+  FontColor #333333
+}
+skinparam activity {
+  BackgroundColor White
+  BorderColor #333333
+  FontName Arial
+  FontSize 13
+}
+
+|Пользователь|
+
+#white:(.)
+
+:Выбирает датчик и диапазон времени;
+:Нажимает "Загрузить историю";
+
+|Веб-клиент|
+:Формирует HTTP-запрос;
+:Отправляет GET /api/sensors/{id}/readings?start=X&end=Y;
+
+|Backend API|
+:Принимает запрос;
+:Валидирует параметры;
+
+if (Параметры корректны?) then (Да)
+  |База данных|
+  :Выполняет запрос:\nSELECT value, timestamp\nFROM sensor_readings\nWHERE sensor_id=@id\nAND timestamp BETWEEN @start AND @end;
+  |Backend API|
+  :Форматирует данные в JSON;
+  :Возвращает 200 OK;
+  |Веб-клиент|
+  :Принимает ответ;
+  :Строит график/таблицу;
+else (Нет)
+  |Backend API|
+  :Возвращает 400 Bad Request;
+  |Веб-клиент|
+  :Показывает ошибку;
+endif
+
+|Пользователь|
+:Видит результат\n(график или ошибку);
+
+stop
+
+@enduml

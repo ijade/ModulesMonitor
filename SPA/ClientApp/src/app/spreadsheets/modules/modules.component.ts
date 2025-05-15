@@ -32,7 +32,7 @@ export class ModulesComponent
         this.fieldsForSorting = [
             new SortingMenuItem('Name', 'Название'),
             new SortingMenuItem('Description', 'Описание'),
-            new SortingMenuItem('CreatedAt', 'Дата создания'),
+            // new SortingMenuItem('CreatedAt', 'Дата создания'),
         ]
     }
 

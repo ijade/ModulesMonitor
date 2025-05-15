@@ -14,6 +14,9 @@ import { QueryChartModel } from '../models/QueryModel';
 import { RANGE_MULTIPLIER, PAGE_HEIGHT, STRETCH_ON_RT_PIXELS, DYNAMIC_SCROLL_SIZE_PERCENT, UserChartService } from '../services/UserChartService';
 import { LocalStorage } from '../common/localStorage';
 import { MatDialog } from '@angular/material/dialog';
+import { SensorValueModel } from '../models/SensorValueModel';
+import { camelCaseReviver } from '../common/serializer';
+import { GRAPH_PAGE_HEIGHT_VH } from './graph/graph.component';
 
 export const USHORT_MAX: number = 65535;
 export const TIME_SCALE_WIDTH = 40;
@@ -59,13 +62,14 @@ export class FetchDataComponent implements OnInit, OnDestroy {
   utcDate: any;
   dateTime: any;
   pickerDateTime: any;
-  range: number = 0;
+  range: number = 10;
   timesScrolled: number = 0;
   dynamicScrollRange: number = 0;
   updateScrollTimeout!: NodeJS.Timeout;
   updateScrollTimeoutCompleted: boolean = true;
   graphHeight: string = '0';
   isDynamicScrollLocked: boolean = false;
+  dateTimeMin: moment.Moment = moment();
 
   private windowScroll$: Subscription = Subscription.EMPTY;
 
@@ -76,6 +80,8 @@ export class FetchDataComponent implements OnInit, OnDestroy {
   onUpdatedValues: EventEmitter<UserChartModel> = new EventEmitter();
   onUpdatedDislpayValues: EventEmitter<any> = new EventEmitter();
   onValuesAppended: EventEmitter<UserChartModel[]> = new EventEmitter();
+  onMessageReceived: EventEmitter<SensorValueModel[]> = new EventEmitter();
+  onGraphRangeUpdated: EventEmitter<moment.Moment> = new EventEmitter();
 
   getTimeZoneNames!: Function;
 
@@ -104,8 +110,11 @@ export class FetchDataComponent implements OnInit, OnDestroy {
       })
       .build();
 
-    this._hubConnection.on('MessageReceived', (message) => {
-      console.log(message);
+    this._hubConnection.on('NewMessage', (message) => {
+      // console.log(message);
+
+      let receivedSensorValues: SensorValueModel[] = JSON.parse(message, camelCaseReviver);
+      this.onMessageReceived.emit(receivedSensorValues);
     });
 
     this._hubConnection.start()
@@ -123,7 +132,7 @@ export class FetchDataComponent implements OnInit, OnDestroy {
       localStorage.setItem(LocalStorage.CURRENT_TIMEZONE, defaultTimezone.toString());
       this.currentTimezone = defaultTimezone;
     }
-    this.range = 30;
+    this.range = 8;
 
     this.dateTime = moment().utcOffset(this.currentTimezone).locale('ru-RU');
     this.pickerDateTime = this.dateTime;
@@ -197,6 +206,14 @@ export class FetchDataComponent implements OnInit, OnDestroy {
     query.rangeMinutes = this.getRange();
 
     this.userCharts = await this.userChartService.GetQuery(query);
+    
+    this.userCharts.forEach(userChart => {
+      userChart.sensors.forEach(sensor => {
+        if (sensor.sensorValues.length > 0 && moment(sensor.sensorValues[0].readingDateTime).isBefore(this.dateTimeMin)){
+          this.dateTimeMin = moment(sensor.sensorValues[0].readingDateTime);
+        }
+      });
+    });
 
     setTimeout(() => this.isLoading = false, 0);
   }
@@ -273,14 +290,26 @@ export class FetchDataComponent implements OnInit, OnDestroy {
   onGraphStretch(
     lastUpdate: moment.Moment
   ) {
-    if (this.lastRTdateTime && lastUpdate.diff(this.lastRTdateTime, 'minutes') == 0) {
+    // console.log(lastUpdate.diff(this.lastRTdateTime, 'seconds'));
+
+    if (this.lastRTdateTime && lastUpdate.diff(this.lastRTdateTime, 'seconds') < 1) {
       return;
     }
 
     //TODO: Calculate stretch from range and page height (including height for title)
-    this.graphHeight = parseInt(this.graphHeight.substring(0, this.graphHeight.length - 2)) + STRETCH_ON_RT_PIXELS + "px";
+    let diffMinutes = moment().diff(this.dateTimeMin, "seconds") / 60;
+
+    let newPageCount = diffMinutes / this.range;
+
+    let newGraphHeight = GRAPH_PAGE_HEIGHT_VH * newPageCount + 'vh';
+    // this.graphHeight = parseInt(this.graphHeight.substring(0, this.graphHeight.length - 2)) + STRETCH_ON_RT_PIXELS + "px";
+    this.graphHeight = newGraphHeight;
     this.scrollToBottom();
     this.lastRTdateTime = lastUpdate;
+
+    // console.log(`pageCount = ${newPageCount}`);
+
+    this.onGraphRangeUpdated.emit(this.dateTimeMin);
   }
 
 

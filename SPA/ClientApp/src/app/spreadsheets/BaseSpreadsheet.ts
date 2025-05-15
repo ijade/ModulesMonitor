@@ -83,7 +83,7 @@ export abstract class BaseSpreadsheet<TModel, TAddEditModal> implements OnInit {
   search(searchText: string): void{
     if (searchText == null
       || searchText.toLowerCase().trim() == this.prevSearchText
-      || searchText.length < 3
+      // || searchText.length < 3
     )
         return;
 

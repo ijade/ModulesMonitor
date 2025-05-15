@@ -13,6 +13,8 @@
         [onOffline]="onOffline"
         [onUpdatedValues]="onUpdatedValues"
         [onUpdatedDislpayValues]="onUpdatedDislpayValues"
+        [onMessageReceived]="onMessageReceived"
+        [onGraphRangeUpdated]="onGraphRangeUpdated"
         [dateAxisIsShowing]="i == 0"
         [dateTime]="dateTime"
         [range]="range"
@@ -27,4 +29,7 @@
         class="graph drag-box"
       ></app-graph>
     </ng-container>
+  </div>
+
+  <div id="legend-container" class="legend-container-wrapper"></div>
   </div>

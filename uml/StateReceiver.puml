@@ -1,0 +1,43 @@
+@startuml ReceiverStateDiagram
+
+skinparam monochrome true
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam state {
+  BackgroundColor White
+  BorderColor Black
+  FontSize 14
+  ArrowColor #000000
+  ArrowFontSize 10
+}
+
+left to right direction
+
+state "Idle" as idle : Ожидание сообщений\n(начальное состояние)
+
+state "Buffering" as buffering {
+  state "Active" as active : Активное накопление
+  state "FlushReady" as flush : Готово к записи
+  [*] --> active
+  active --> active : Добавление сообщения
+  active --> flush : Таймер истек\nИЛИ Count >= BatchSize
+}
+
+state "WritingToDB" as writing : Пакетная запись\nв БД
+state "Verifying" as verifying : Проверка\nрезультата
+state "DeadLetterQueue" as dead : Очередь\nнеудачных сообщений
+
+[*] --> idle
+idle --> buffering : Получено сообщение
+buffering --> writing : Переход по условию
+writing --> verifying : Запись завершена
+verifying --> idle : Успех
+verifying --> dead : Ошибка
+
+note right of buffering
+  <b>Параметры батчинга:</b>
+  • BatchSize: 100-1000
+  • BatchTimeout: 1-5 сек
+end note
+
+@enduml

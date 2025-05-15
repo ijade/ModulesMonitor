@@ -1,5 +1,5 @@
 @startuml
-title Получение и сохранение данных (QoS 2)
+'title Получение и сохранение данных (QoS 2)
 participant "Брокер" as Broker
 participant "Ресивер" as Subscriber
 participant "База данных" as DB

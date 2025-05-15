@@ -9,6 +9,7 @@ namespace SPA.Services
     {
         private readonly ApplicationDbContext _context;
         const int TakeLastValuesCount = 200;
+        const int DefaultRangeMinutes = 8;
 
         public UserChartService(ApplicationDbContext context) { _context = context; }
 
@@ -35,13 +36,19 @@ namespace SPA.Services
                 })
                 .ToListAsync();
 
+            DateTime rangeEnd = DateTime.UtcNow;
+            DateTime rangeStart = rangeEnd.AddMinutes(-DefaultRangeMinutes);
+
             foreach (var module in modules)
             {
                 foreach (var sensor in module.Sensors)
                 {
                     sensor.sensorValues =  await _context.SensorValues
-                        .Where(x => x.Sensor.Id == sensor.Id)
-                        .Take(TakeLastValuesCount)
+                        .Where(x => x.Sensor.Id == sensor.Id
+                            && x.ReadingDateTime >= rangeStart
+                            && x.ReadingDateTime <= rangeEnd
+                        )
+                        //.Take(TakeLastValuesCount)
                         .Select(x => new SensorValueModel()
                         {
                             Id = x.Id,
@@ -49,6 +56,7 @@ namespace SPA.Services
                             SensorId = sensor.Id,
                             Value = x.Value,
                         })
+                        .OrderBy(x => x.ReadingDateTime)
                         .ToListAsync();
                 }
             }

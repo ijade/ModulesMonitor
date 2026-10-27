@@ -1,0 +1,74 @@
+@startuml
+'title **Component diagram**
+
+
+skinparam dpi 150
+skinparam defaultFontSize 22
+skinparam maxMessageSize 50
+skinparam wrapWidth 200
+skinparam componentStyle uml2
+left to right direction
+
+
+' Main system components
+component "Sensor Emulators" as Sensors {
+  component "Data Generator" as Generator
+  component "MQTT Client" as MQTTClient
+}
+
+component "Message Broker (MQTT)" as Broker {
+  interface "MQTT Topics" as Topics
+}
+
+component "Data Receiver" as Receiver {
+  component "MQTT Subscriber" as MQTTSubscriber
+  component "Data Processor" as DataProcessor
+  component "DB Writer" as DBWriter
+}
+
+component "Database" as Database {
+  component "PostgreSQL" as DB
+}
+
+component "Web Server" as WebServer {
+  component "Backend API" as API
+  component "Frontend (Angular/Typescript)" as Frontend
+}
+
+' Component relations
+Sensors --> Broker : "Sending readings (MQTT)"
+Broker --> Receiver : "Subscription for topics"
+Receiver --> Database : "Data saving"
+WebServer --> Database : "Configuration Read/Write"
+WebServer --> Receiver : "Subscriptions control"
+
+' Interfaces
+Topics -- MQTTClient
+Topics -- MQTTSubscriber
+API -- Frontend : "REST/WebSocket"
+Frontend -- User : "WEB UI"
+
+' Дополнительные пояснения
+note right of Sensors
+  **Sensor Emulators:**
+  - Generate sensor readings samples
+  - Send samples to MQTT broker
+end note
+
+note left of Receiver
+  **Data Receiver:**
+  QoS of subscription: 2 (at most once)
+end note
+
+note left of Sensors
+  **Sensor Emulators:**
+  QoS of Publication: 2 (at most once)
+end note
+
+note left of Broker
+  **Message Broker:**
+  - Mosquitto via MQTT
+  - interchangeable for other MQTT brokers
+end note
+
+@enduml
